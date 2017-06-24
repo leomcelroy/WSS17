@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[    152416,       3590]
-NotebookOptionsPosition[    137815,       3248]
-NotebookOutlinePosition[    140523,       3312]
-CellTagsIndexPosition[    140480,       3309]
+NotebookDataLength[    147235,       3440]
+NotebookOptionsPosition[    132639,       3098]
+NotebookOutlinePosition[    135347,       3162]
+CellTagsIndexPosition[    135304,       3159]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -45,11 +45,15 @@ Cell["Setting Up the Model", "Section",
   3.707183763050873*^9}},ExpressionUUID->"601ecc6d-829b-49bf-b3f8-\
 b71c3d8dff03"],
 
-Cell["Let\[CloseCurlyQuote]s start by making our table.", "Text",
+Cell["\<\
+Our model involves placing sand on a table and adding grains one by one as we \
+observe collapses. Let\[CloseCurlyQuote]s start by making our table.\
+\>", "Text",
  CellChangeTimes->{{3.700774312865305*^9, 3.700774350341485*^9}, {
   3.707174304048258*^9, 3.707174335428431*^9}, {3.707174667397688*^9, 
-  3.707174703018668*^9}, {3.707214932362406*^9, 
-  3.7072149337120934`*^9}},ExpressionUUID->"9c9831d7-4344-49d0-971c-\
+  3.707174703018668*^9}, {3.707214932362406*^9, 3.7072149337120934`*^9}, {
+  3.707253135059785*^9, 3.707253190134965*^9}, {3.707253229909343*^9, 
+  3.7072532305167913`*^9}},ExpressionUUID->"9c9831d7-4344-49d0-971c-\
 8b79594be7ef"],
 
 Cell["We begin by picking our table size:", "Direction",
@@ -63,8 +67,7 @@ cf57149c507a"],
 Cell[BoxData[
  RowBox[{"gridSize", ":=", "8"}]], "Input",
  InitializationCell->True,
- CellLabel->
-  "In[361]:=",ExpressionUUID->"2ccbcc0f-2983-4b0d-a9fc-66160ac1c82a"],
+ CellLabel->"In[56]:=",ExpressionUUID->"2ccbcc0f-2983-4b0d-a9fc-66160ac1c82a"],
 
 Cell["Now let\[CloseCurlyQuote]s generate a matrix to represent our table:", \
 "Direction",
@@ -96,8 +99,7 @@ Cell[BoxData[{
   3.707181814182598*^9}, {3.707182606676475*^9, 3.7071826100839853`*^9}, {
   3.707211665684875*^9, 3.707211665976686*^9}, {3.707215349271317*^9, 
   3.707215349973748*^9}},
- CellLabel->
-  "In[362]:=",ExpressionUUID->"564ff60d-2ca5-4d56-8988-5ccb2353b3c1"],
+ CellLabel->"In[57]:=",ExpressionUUID->"564ff60d-2ca5-4d56-8988-5ccb2353b3c1"],
 
 Cell[BoxData[
  GraphicsBox[{
@@ -137,9 +139,8 @@ Cell[BoxData[
    3.707211792608857*^9, 3.707213436030665*^9, 3.7072153285181227`*^9, 
    3.707228710995968*^9, 3.707229241511801*^9, 3.70722928682085*^9, 
    3.7072293217587223`*^9, 3.707229358951806*^9, 3.7072293939140587`*^9, 
-   3.707229826614895*^9},
- CellLabel->
-  "Out[363]=",ExpressionUUID->"207d2f11-107e-452d-9752-a3a9021114c6"]
+   3.707229826614895*^9, {3.70725306334606*^9, 3.707253069690436*^9}},
+ CellLabel->"Out[58]=",ExpressionUUID->"d431ec43-fab3-44c3-b78f-7df7f7b1e3cc"]
 }, Open  ]],
 
 Cell["\<\
@@ -177,8 +178,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.7071749286774178`*^9, 3.707174932233391*^9}, {
   3.707174966000915*^9, 3.707174977362281*^9}, {3.7071751548911057`*^9, 
   3.707175176000622*^9}, {3.707175996683093*^9, 3.707176018446069*^9}},
- CellLabel->
-  "In[364]:=",ExpressionUUID->"e1fad0c0-fedc-43d8-9111-879cf1cf6386"],
+ CellLabel->"In[59]:=",ExpressionUUID->"e1fad0c0-fedc-43d8-9111-879cf1cf6386"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -358,18 +358,20 @@ Cell[BoxData[
    3.707211702544738*^9, 3.7072117927000504`*^9, 3.707213436241214*^9, 
    3.7072153286225557`*^9, 3.70722871107725*^9, 3.707229241565537*^9, 
    3.707229286885354*^9, 3.70722932181516*^9, 3.7072293590172653`*^9, 
-   3.7072293939790897`*^9, 3.7072298266824207`*^9},
- CellLabel->
-  "Out[364]=",ExpressionUUID->"8d00eadf-ae72-4cfa-a589-299ed5751600"]
+   3.7072293939790897`*^9, 3.7072298266824207`*^9, {3.707253063444667*^9, 
+   3.707253069744009*^9}},
+ CellLabel->"Out[59]=",ExpressionUUID->"a3de1016-ec23-410e-984b-744e4a886136"]
 }, Open  ]],
 
-Cell["Now we have blanked the table with sand at random heights:", "Direction",
+Cell["Now let\[CloseCurlyQuote]s blanket the table with sand at random \
+heights:", "Direction",
  CellChangeTimes->{{3.700774301937366*^9, 3.700774308664962*^9}, {
   3.700774357721336*^9, 3.700774365046776*^9}, {3.70077442733965*^9, 
   3.70077443419691*^9}, {3.707175036708338*^9, 3.707175075749433*^9}, {
   3.7071752232662973`*^9, 3.707175230325069*^9}, {3.707175262271832*^9, 
-  3.707175287268684*^9}, {3.707178820589279*^9, 
-  3.707178829037416*^9}},ExpressionUUID->"9538ad31-9137-4471-a2bb-\
+  3.707175287268684*^9}, {3.707178820589279*^9, 3.707178829037416*^9}, {
+  3.7072532603278427`*^9, 
+  3.707253267413336*^9}},ExpressionUUID->"9538ad31-9137-4471-a2bb-\
 6d12351af01c"],
 
 Cell[CellGroupData[{
@@ -394,14 +396,13 @@ Cell[BoxData[{
    RowBox[{"Mesh", "\[Rule]", " ", "True"}]}], "]"}]}], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.707175099797846*^9, 3.7071751847297792`*^9}},
- CellLabel->
-  "In[365]:=",ExpressionUUID->"ad176137-5d51-4cdf-be5a-4dfe5cd8b2cf"],
+ CellLabel->"In[60]:=",ExpressionUUID->"ad176137-5d51-4cdf-be5a-4dfe5cd8b2cf"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OLoAJc4LnWEzCdkHqnqCImT635i1VPL
-PaT6d7CFD7HyxIrjMpda/sYlTqn5pMoPlHpizSPW/IFKV7jso3d+olb4UKt8
-wJQHAO13XOM=
+1:eJxTTMoPSmVmYGDggGIQGwI+2DNgBTBxdHlc4sSahwsQMpeQemq5k1T9uOwl
+1z5y9VErPujlL1zytFaPLk6ufbQKH1LNx2Ueuf4mVpzUfEdpeJPrTlLNJVUf
+tdI/tfIpLn2Y6gCyX1zj
     "], {{0, 0}, {8, 8}}, {0, 1}], {{
      {GrayLevel[
        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -433,9 +434,9 @@ wJQHAO13XOM=
    3.7072117027971363`*^9, 3.707211792774949*^9, 3.707213436338776*^9, 
    3.7072153287189074`*^9, 3.707228711208723*^9, 3.707229241663658*^9, 
    3.70722928695864*^9, 3.707229321913851*^9, 3.7072293590846853`*^9, 
-   3.707229394046914*^9, 3.707229826805933*^9},
- CellLabel->
-  "Out[366]=",ExpressionUUID->"17a58e0d-e12b-4e37-bf7e-7a502e38efdc"]
+   3.707229394046914*^9, 3.707229826805933*^9, {3.707253063521117*^9, 
+   3.7072530698071423`*^9}},
+ CellLabel->"Out[61]=",ExpressionUUID->"8d3c6092-73b6-413f-9994-463cb5236309"]
 }, Open  ]],
 
 Cell["\<\
@@ -492,12 +493,11 @@ Cell[BoxData[{
    "]"}]}], "\[IndentingNewLine]", "printArray"}], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.707178807053684*^9, 3.707178810174086*^9}},
- CellLabel->
-  "In[367]:=",ExpressionUUID->"8654a732-261c-406f-9d3a-f918919d9ffe"],
+ CellLabel->"In[62]:=",ExpressionUUID->"8654a732-261c-406f-9d3a-f918919d9ffe"],
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{"5", ",", "6"}], "}"}]], "Output",
+  RowBox[{"8", ",", "8"}], "}"}]], "Output",
  CellChangeTimes->{
   3.7071753703057528`*^9, 3.707178216317892*^9, 3.70717840581824*^9, 
    3.7071784421284933`*^9, 3.707178555056363*^9, 3.70717881424251*^9, 
@@ -508,15 +508,15 @@ Cell[BoxData[
    3.707211702824794*^9, 3.7072117928436937`*^9, 3.707213436407979*^9, 
    3.7072153288100863`*^9, 3.707228711270447*^9, 3.707229241717206*^9, 
    3.707229287022616*^9, 3.707229321967462*^9, 3.7072293591520433`*^9, 
-   3.707229394085216*^9, 3.707229826866345*^9},
- CellLabel->
-  "Out[367]=",ExpressionUUID->"5f4d120a-307e-43cc-bf09-a7a83aaa1b17"],
+   3.707229394085216*^9, 3.707229826866345*^9, {3.707253063550509*^9, 
+   3.7072530698239202`*^9}},
+ CellLabel->"Out[62]=",ExpressionUUID->"0f679b93-66b3-4f3f-8fba-2a276b88710c"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OLoAJc4LnWEzCdkHqnqCImT635i1VPL
-PaT6d7CFD7HyxIrjMpda/sYlTqn5pMoPlHpizSPW/IFKV7jso3d+olb4UKt8
-wJQHAO13XOM=
+1:eJxTTMoPSmVmYGDggGIQGwI+2DNgBTBxdHlc4sSahwsQMpeQemq5k1T9uOwl
+1z5y9VErPujlL1zytFaPLk6ufbQKH1LNx2Ueuf4mVpzUfEdpeJPrTlLNJVUf
+tdI/tfIpLn2Y6gCyX1zj
     "], {{0, 0}, {8, 8}}, {0, 1}], {{
      {GrayLevel[
        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -534,7 +534,7 @@ wJQHAO13XOM=
        Antialiasing->False]}}}},
   Epilog->{
     GrayLevel[1], 
-    DiskBox[{5.5, 3.5}, 0.2]},
+    DiskBox[{7.5, 0.5}, 0.2]},
   Frame->False,
   FrameLabel->{None, None},
   FrameTicks->{{None, None}, {None, None}},
@@ -553,20 +553,21 @@ wJQHAO13XOM=
    3.707211702824794*^9, 3.7072117928436937`*^9, 3.707213436407979*^9, 
    3.7072153288100863`*^9, 3.707228711270447*^9, 3.707229241717206*^9, 
    3.707229287022616*^9, 3.707229321967462*^9, 3.7072293591520433`*^9, 
-   3.707229394085216*^9, 3.7072298269110403`*^9},
- CellLabel->
-  "Out[369]=",ExpressionUUID->"7ec42230-15a5-4bf0-b275-1cff25dcfed7"]
+   3.707229394085216*^9, 3.707229826866345*^9, {3.707253063550509*^9, 
+   3.707253069854104*^9}},
+ CellLabel->"Out[64]=",ExpressionUUID->"4443fa23-5f1f-469e-9cdb-64f1a1797682"]
 }, Open  ]],
 
 Cell["\<\
-Now we have added a grain of sand to the cell we selected. If this made the \
+Now we will add a grain of sand to the cell we selected. If this made the \
 cell larger than 5 grains tall then the cell will topple and cause an \
 avalanche:\
 \>", "Direction",
  CellChangeTimes->{{3.700774554822753*^9, 3.700774560088324*^9}, {
   3.7071754700069637`*^9, 3.707175492711507*^9}, {3.707175563495082*^9, 
-  3.70717562950439*^9}, {3.707178768774547*^9, 
-  3.707178769273766*^9}},ExpressionUUID->"dc2b8755-0191-4b45-8338-\
+  3.70717562950439*^9}, {3.707178768774547*^9, 3.707178769273766*^9}, {
+  3.707253291046386*^9, 
+  3.7072532939754457`*^9}},ExpressionUUID->"dc2b8755-0191-4b45-8338-\
 979fdfccba7f"],
 
 Cell[CellGroupData[{
@@ -600,14 +601,13 @@ Cell[BoxData[{
  InitializationCell->True,
  CellChangeTimes->{
   3.707176610071316*^9, {3.707183697412167*^9, 3.707183699823731*^9}},
- CellLabel->
-  "In[370]:=",ExpressionUUID->"6c4df0ad-407d-4ddd-92c4-ee7f16d6eb60"],
+ CellLabel->"In[65]:=",ExpressionUUID->"6c4df0ad-407d-4ddd-92c4-ee7f16d6eb60"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OLoAJc4LnWEzCdkHqnqCImT635i1VPL
-PaT6d7CFD7HyxIoTay6l9lA7XEmVHyj1xJpHrPkDla5w2Ufv/ESt8KFW+YAp
-DwAb41u0
+1:eJxTTMoPSmVmYGDggGIQGwI+2DNgBTBxdHlc4sSahwsQMheXOdR2J6n6cdlL
+rn3k6qNWfNDLX7jkaa0eXZza6Y1Y+6llPi7zyPU3seKk5jtKw5tcd5JqLqn6
+qJX+qZVPcenDVAcAu9dc4w==
     "], {{0, 0}, {8, 8}}, {0, 1}], {{
      {GrayLevel[
        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -625,7 +625,7 @@ DwAb41u0
        Antialiasing->False]}}}},
   Epilog->{
     GrayLevel[1], 
-    DiskBox[{5.5, 3.5}, 0.2]},
+    DiskBox[{7.5, 0.5}, 0.2]},
   Frame->False,
   FrameLabel->{None, None},
   FrameTicks->{{None, None}, {None, None}},
@@ -642,9 +642,9 @@ DwAb41u0
    3.707211702935047*^9, 3.707211793009026*^9, 3.707213436774914*^9, 
    3.707215328981946*^9, 3.7072287114283743`*^9, 3.7072292418476753`*^9, 
    3.707229287174778*^9, 3.707229322101178*^9, 3.7072293592804813`*^9, 
-   3.707229394229835*^9, 3.707229826964452*^9},
- CellLabel->
-  "Out[372]=",ExpressionUUID->"85768286-9180-4f59-bae1-949700a02190"]
+   3.707229394229835*^9, 3.707229826964452*^9, {3.7072530636534853`*^9, 
+   3.707253069913522*^9}},
+ CellLabel->"Out[67]=",ExpressionUUID->"8654bfdf-a847-46a1-8ec2-fefa19e3215f"]
 }, Open  ]]
 }, Open  ]],
 
@@ -735,14 +735,13 @@ Cell[BoxData[{
   3.707179564616997*^9}, {3.70717961361334*^9, 3.707179626119154*^9}, {
   3.707179681454399*^9, 3.707179691548937*^9}, {3.707179775944034*^9, 
   3.707179776044188*^9}, {3.7071826464197197`*^9, 3.707182651219305*^9}},
- CellLabel->
-  "In[373]:=",ExpressionUUID->"13c5811d-c643-43d7-a0e2-b79261f2e9a8"],
+ CellLabel->"In[68]:=",ExpressionUUID->"13c5811d-c643-43d7-a0e2-b79261f2e9a8"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGzv4YI+dJqSeVHFyzcfFJ1acVHeSqo7a4qS6h9bu
-ItZeUuOF1PiitvrB5h5C7iJWPS57idVHyBxquZ/c8CfWXlLdg8sdA+Vf6pdv
-ALa9YHA=
+1:eJxTTMoPSmVmYGDggGIQGxV8sMfORxfHpQ+XekLmECtObfNJtZ9YcVLdSar7
+aR0OtI5HUu3FZQ6t0ye13UNrcwiZR6o76O0ecuOXWPfQuhygt/mUp2cAOAZp
+6A==
     "], {{0, 0}, {8, 8}}, {0, 1}], {{
      {GrayLevel[
        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -784,9 +783,8 @@ ALa9YHA=
    3.707211793088966*^9, 3.707213437054722*^9, 3.70721532911978*^9, 
    3.7072287115092573`*^9, 3.7072292419151506`*^9, 3.707229287244151*^9, 
    3.7072293221744003`*^9, 3.7072293593567343`*^9, 3.70722939431402*^9, 
-   3.7072298270221853`*^9},
- CellLabel->
-  "Out[377]=",ExpressionUUID->"45a144f4-e4d7-4d5f-b038-25041f1b853c"]
+   3.7072298270221853`*^9, {3.707253063693097*^9, 3.7072530699492817`*^9}},
+ CellLabel->"Out[72]=",ExpressionUUID->"3b89fd0f-fc94-4044-9b85-cfe45c0f55ca"]
 }, Open  ]],
 
 Cell["When a cell topples we remove 4 grains from that cell:", "Direction",
@@ -831,14 +829,13 @@ Cell[BoxData[{
    3.707176537014833*^9, 3.707176538631542*^9}, {3.707176598880228*^9, 
    3.707176598965201*^9}, 3.7071766363496923`*^9, {3.707179673608232*^9, 
    3.707179673865037*^9}},
- CellLabel->
-  "In[378]:=",ExpressionUUID->"bd847728-192a-4731-b840-d11d4c8f6a82"],
+ CellLabel->"In[73]:=",ExpressionUUID->"bd847728-192a-4731-b840-d11d4c8f6a82"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGzv4YI+dJqSeVHFyzcfFJ1acVHeSqo7a4qS6h9bu
-ItZeUuOF1PiitvrB5h5C7iJWPS57idVHyBxquZ/W+ZdU9+Byx0D5l/rhAwAq
-QmGf
+1:eJxTTMoPSmVmYGDggGIQGxV8sMfORxfHpQ+XekLmECtObfNJtZ9YcVLdSar7
+aR0OtI5HUu3FZQ6t0ye13UNrcwiZR6o76O0eSuOXkHtoXQ7Q23zK0zMAq3xr
+Fw==
     "], {{0, 0}, {8, 8}}, {0, 1}], {{
      {GrayLevel[
        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -874,9 +871,8 @@ QmGf
    3.70721179316424*^9, 3.7072134371727343`*^9, 3.70721532921637*^9, 
    3.707228711593165*^9, 3.7072292419847097`*^9, 3.707229287311428*^9, 
    3.707229322248473*^9, 3.707229359433967*^9, 3.707229394377696*^9, 
-   3.707229827085889*^9},
- CellLabel->
-  "Out[380]=",ExpressionUUID->"a4711048-7389-46da-ba0c-2ffbba2c1033"]
+   3.707229827085889*^9, {3.707253063732329*^9, 3.707253069989408*^9}},
+ CellLabel->"Out[75]=",ExpressionUUID->"e1f9ef48-2b7f-4758-917e-0864fd0d0eb3"]
 }, Open  ]],
 
 Cell["\<\
@@ -959,14 +955,13 @@ Cell[BoxData[{
    3.707176856305661*^9, 3.7071768944028273`*^9}, {3.707176942427251*^9, 
    3.707177042065083*^9}, {3.707178431006917*^9, 3.7071784333896646`*^9}, 
    3.707179735882289*^9, {3.7071818976614017`*^9, 3.707181912985106*^9}},
- CellLabel->
-  "In[381]:=",ExpressionUUID->"b580f0d5-2a34-4267-bb3e-6bb4e11c407d"],
+ CellLabel->"In[76]:=",ExpressionUUID->"b580f0d5-2a34-4267-bb3e-6bb4e11c407d"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGzv4YI+dJqSeVHFyzcfFJ1acVHeSqo7a4qS6h9bu
-ItZeUuOF1PiitvrB5h5C7iJWPaX6cKmjtvtJ9Se5+qidnkk1n9z0T/3yDQDT
-t2Bw
+1:eJxTTMoPSmVmYGDggGIQGxV8sMfORxfHpQ+XekLmECtObfNJtZ9YcVLdSar7
+aR0OtI5HUu3FZQ6t0ye13UNrcwiZRwgQm66p7R5C4U8IkJt+iJUnNd6INZ/W
+4UZYHAAb52no
     "], {{0, 0}, {8, 8}}, {0, 1}], {{
      {GrayLevel[
        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1005,9 +1000,9 @@ t2Bw
    3.707211704221608*^9, 3.707211793239299*^9, 3.707213437243195*^9, 
    3.707215329379341*^9, 3.707228711844101*^9, 3.707229242052347*^9, 
    3.707229287387731*^9, 3.7072293223225*^9, 3.7072293595052233`*^9, 
-   3.70722939444711*^9, 3.707229827167386*^9},
- CellLabel->
-  "Out[384]=",ExpressionUUID->"61a933a0-b4ea-468f-9fe8-aee20eb63301"]
+   3.70722939444711*^9, 3.707229827167386*^9, {3.707253063771785*^9, 
+   3.707253070048761*^9}},
+ CellLabel->"Out[79]=",ExpressionUUID->"cc1e3062-4a5f-41bd-8c4f-418f0f392c99"]
 }, Open  ]],
 
 Cell["\<\
@@ -1128,8 +1123,7 @@ Cell[BoxData[{
   3.7071776311267033`*^9}, {3.707177731617919*^9, 3.707177737452615*^9}, {
   3.7071782665035257`*^9, 3.707178271128252*^9}, {3.707178464850122*^9, 
   3.7071784871329737`*^9}, {3.7071799858253813`*^9, 3.70717999093828*^9}},
- CellLabel->
-  "In[385]:=",ExpressionUUID->"ebebe772-4434-4baa-ab62-d767003f91a0"],
+ CellLabel->"In[80]:=",ExpressionUUID->"ebebe772-4434-4baa-ab62-d767003f91a0"],
 
 Cell["\<\
 Let\[CloseCurlyQuote]s see what happens as we let the avalanches die down in \
@@ -1165,15 +1159,15 @@ Cell[BoxData[{
    3.707179905389077*^9, 3.707179909068111*^9}, {3.707179994686194*^9, 
    3.707179995930727*^9}, {3.707180204499578*^9, 3.707180215559712*^9}, 
    3.707180283237702*^9, 3.70718269825165*^9},
- CellLabel->
-  "In[388]:=",ExpressionUUID->"2d447556-fc2e-4670-ad72-dcbaac67ff6c"],
+ CellLabel->"In[83]:=",ExpressionUUID->"2d447556-fc2e-4670-ad72-dcbaac67ff6c"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGzv4YI+dJqSeVHFyzcfFJ1acVHeSqo7a4qS6h9bu
-ItZeUuOF1PiitnpS3UNv9+PiU1s9IUAr99M6fVNqz0CXV9Qv3wD5l2Bw
+1:eJxTTMoPSmVmYGDggGIQGxV8sMfORxfHpQ+XekLmECtObfNJtZ9YcVLdSar7
+aR0OtI5HUu3FZQ6t0yet4xGXOK3jkVLzyNVPiE9IHbHmDlQ5QGk4kKqe8vQJ
+AAIHbEY=
     "], {{0, 0}, {8, 8}}, {0, 1}], {{
      {GrayLevel[
        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1205,16 +1199,17 @@ ItZeUuOF1PiitnpS3UNv9+PiU1s9IUAr99M6fVNqz0CXV9Qv3wD5l2Bw
    3.707211704456771*^9, 3.707211793360737*^9, 3.7072134373794537`*^9, 
    3.7072153295274267`*^9, 3.707228712084725*^9, 3.707229242167096*^9, 
    3.7072292875207777`*^9, 3.7072293224423113`*^9, 3.7072293596079187`*^9, 
-   3.707229394563909*^9, 3.707229827276589*^9},
+   3.707229394563909*^9, 3.707229827276589*^9, {3.707253063873693*^9, 
+   3.707253070149584*^9}},
  CellLabel->
   "During evaluation of \
-In[388]:=",ExpressionUUID->"9c72b55c-b023-4ecc-9f51-55b40cfd28b2"],
+In[83]:=",ExpressionUUID->"9755e6db-fb26-45b7-9479-ac4979a5a75f"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGzv4YI+dJqSeVHFyzcfFJ1acVHeSqo7a4qS6h9bu
-ItZeUuOF1PiitnpS3UNquJDqHnLtoTTdEmsOtd1PLX/SKjwHuryifvkGAInN
-YZ8=
+1:eJxTTMoPSmVmYGDggGIQGxV8sMfORxfHpQ+XekLmECtObfNJtZ9YcVLdSar7
+aR0OtI5HUu3FZQ6t0ye54oTcQUic1vFIrjmE1BErT6vwpLY7SRWntXupn24B
+lrZp6A==
     "], {{0, 0}, {8, 8}}, {0, 1}], {{
      {GrayLevel[
        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1246,10 +1241,11 @@ YZ8=
    3.707211704456771*^9, 3.707211793360737*^9, 3.7072134373794537`*^9, 
    3.7072153295274267`*^9, 3.707228712084725*^9, 3.707229242167096*^9, 
    3.7072292875207777`*^9, 3.7072293224423113`*^9, 3.7072293596079187`*^9, 
-   3.707229394563909*^9, 3.7072298272910233`*^9},
+   3.707229394563909*^9, 3.707229827276589*^9, {3.707253063873693*^9, 
+   3.707253070161922*^9}},
  CellLabel->
   "During evaluation of \
-In[388]:=",ExpressionUUID->"c97d1d79-0f51-4497-a11f-b8e2bfa6c816"]
+In[83]:=",ExpressionUUID->"1cdfe2ab-e2d8-49fd-aff6-c2354f07e5f6"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -1324,8 +1320,7 @@ Cell[BoxData[
    ")"}]}]], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.7071778318007917`*^9, 3.7071778824309*^9}},
- CellLabel->
-  "In[390]:=",ExpressionUUID->"3fe5c8d8-86a9-474c-9101-ca5d412ac9ce"],
+ CellLabel->"In[85]:=",ExpressionUUID->"3fe5c8d8-86a9-474c-9101-ca5d412ac9ce"],
 
 Cell["\<\
 Now that we have encapsulated the process of taking a step, let\
@@ -1345,7 +1340,7 @@ Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"numberOfTrials", " ", "=", "10"}], ";"}], 
+   RowBox[{"numberOfTrials", " ", "=", "1000"}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"sandTable", " ", "=", " ", 
@@ -1388,22 +1383,21 @@ Cell[BoxData[{
    3.707211789703615*^9, 3.707211790438026*^9}, {3.707229203108491*^9, 
    3.707229234516428*^9}, {3.707229320321787*^9, 3.707229320920649*^9}, {
    3.7072293887215776`*^9, 3.707229388850046*^9}, {3.707229815370579*^9, 
-   3.7072298156429873`*^9}},
- CellLabel->
-  "In[391]:=",ExpressionUUID->"154426e8-a56b-4fc1-b537-12c3647f7943"],
+   3.7072298156429873`*^9}, {3.707253079047394*^9, 3.707253081765338*^9}},
+ CellLabel->"In[86]:=",ExpressionUUID->"154426e8-a56b-4fc1-b537-12c3647f7943"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`i26$$ = 3, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`i7$$ = 6, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {
-    "\"min\"" :> {$CellContext`i26$$ = 1}, 
-     "\"max\"" :> {$CellContext`i26$$ = 19}}, Typeset`bookmarkMode$$ = "Menu",
-     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"min\"" :> {$CellContext`i7$$ = 1}, 
+     "\"max\"" :> {$CellContext`i7$$ = 15}}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`i26$$], 1, ""}, 1, 19, 1}}, Typeset`size$$ = 
+       Hold[$CellContext`i7$$], 1, ""}, 1, 15, 1}}, Typeset`size$$ = 
     Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`i26$214079$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`i7$8286$$ = 0}, 
     PaneBox[
      PanelBox[
       DynamicWrapperBox[GridBox[{
@@ -1413,10 +1407,10 @@ Cell[BoxData[
             TagBox[
              StyleBox[GridBox[{
                 {"\<\"\"\>", 
-                 AnimatorBox[Dynamic[$CellContext`i26$$], {1, 19, 1},
+                 AnimatorBox[Dynamic[$CellContext`i7$$], {1, 15, 1},
                   AnimationRate->3,
-                  AnimationRunTime->51.437474727630615`,
-                  AnimationTimeIndex->0.8507493336995466,
+                  AnimationRunTime->278.5675792694092,
+                  AnimationTimeIndex->1.6798559824634083`,
                   
                   AppearanceElements->{
                    "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons",
@@ -1447,9 +1441,9 @@ Cell[BoxData[
               TagBox[
                PaneSelectorBox[{1->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSfWfFz+ItZ8ctUT
-chex4oTsI9Y9pPqLVHXEqidXnN7uJ+QuXOaTGz+E1FHLHGqHA6Xmk6ueVuGI
-S5xe6QcBAMzoXhI=
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPYPNXlz6SE035MYLqe4ZbOmHXHl6mU+rfEup+dRKh7TOj4TcR7o5AKDp
+aLk=
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1471,7 +1465,7 @@ S5xe6QcBAMzoXhI=
                     Antialiasing->False]}}}},
                  Epilog->{
                    GrayLevel[1], 
-                   DiskBox[{1.5, 4.5}, 0.2]},
+                   DiskBox[{1.5, 6.5}, 0.2]},
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -1482,9 +1476,9 @@ S5xe6QcBAMzoXhI=
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 2->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSfWfFz+ItZ8ctUT
-chex4oTsI9Y9pPqLVHXEqidXnN7uJ+QuXOaTGz+E1FHLHGqHA6Xmk6ueVuGI
-S5xa7iSkHgEAGtZfQQ==
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPYPNXlz6SE039HLPYEs/5MrTy3xa5VtKzadWOqR1fiTkPtLNAQAmzGno
+
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1506,7 +1500,7 @@ S5xa7iSkHgEAGtZfQQ==
                     Antialiasing->False]}}}},
                  Epilog->{
                    GrayLevel[1], 
-                   DiskBox[{5.5, 7.5}, 0.2]},
+                   DiskBox[{0.5, 4.5}, 0.2]},
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -1517,9 +1511,79 @@ S5xa7iSkHgEAGtZfQQ==
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 3->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSfWfFz+ItZ8ctUT
-chex4oTsI9Y9pPqLVHXEqidXnN7uJ+QuXOZT29+E7CXVHGqHA6Xmk6ueVvkF
-lzi13ElIPQIAACROX0E=
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPYPNXlz6SE039HLPQKWfgcp3lJpPq3xLqfnUSoe0zo+E3Ee6OQAwRGno
+
+                   "], {{0, 0}, {8, 8}}, {0, 1}], {{
+                    {GrayLevel[
+                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 8}, {8, 8}}, {{0, 7}, {8, 7}}, {{0, 6}, {8, 
+                    6}}, {{0, 5}, {8, 5}}, {{0, 4}, {8, 4}}, {{0, 3}, {8, 
+                    3}}, {{0, 2}, {8, 2}}, {{0, 1}, {8, 1}}, {{0, 0}, {8, 
+                    0}}}],
+                    Antialiasing->False]}}, {
+                    {GrayLevel[
+                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 8}}, {{1, 0}, {1, 8}}, {{2, 0}, {2, 
+                    8}}, {{3, 0}, {3, 8}}, {{4, 0}, {4, 8}}, {{5, 0}, {5, 
+                    8}}, {{6, 0}, {6, 8}}, {{7, 0}, {7, 8}}, {{8, 0}, {8, 
+                    8}}}],
+                    Antialiasing->False]}}}},
+                 Epilog->{
+                   GrayLevel[1], 
+                   DiskBox[{7.5, 4.5}, 0.2]},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 4->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzmkGo+sepx6SM33mltDi511Mp3lJpPq3xLqfmUup9e+YKQ+0g3
+BwBEL2sX
+                   "], {{0, 0}, {8, 8}}, {0, 1}], {{
+                    {GrayLevel[
+                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 8}, {8, 8}}, {{0, 7}, {8, 7}}, {{0, 6}, {8, 
+                    6}}, {{0, 5}, {8, 5}}, {{0, 4}, {8, 4}}, {{0, 3}, {8, 
+                    3}}, {{0, 2}, {8, 2}}, {{0, 1}, {8, 1}}, {{0, 0}, {8, 
+                    0}}}],
+                    Antialiasing->False]}}, {
+                    {GrayLevel[
+                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 8}}, {{1, 0}, {1, 8}}, {{2, 0}, {2, 
+                    8}}, {{3, 0}, {3, 8}}, {{4, 0}, {4, 8}}, {{5, 0}, {5, 
+                    8}}, {{6, 0}, {6, 8}}, {{7, 0}, {7, 8}}, {{8, 0}, {8, 
+                    8}}}],
+                    Antialiasing->False]}}}},
+                 Epilog->{
+                   GrayLevel[1], 
+                   DiskBox[{3.5, 3.5}, 0.2]},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 5->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzmkGo+sepx6SM33mllDiF11Mp3lJpPq3xLqfmUup9e+YKQ+0g3
+BwChm2no
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1550,81 +1614,11 @@ lzi13ElIPQIAACROX0E=
                  
                  Method->{
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
-                   Automatic}], 4->
-                GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSfWfFz+ItZ8ctUT
-chex4oTsI9Y9pPqLXHW4+JSK09r9uNxBaXojZA6145lcdQNlPrnqaZVfcIlT
-y52E1CMAAC3GX0E=
-                   "], {{0, 0}, {8, 8}}, {0, 1}], {{
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 8}, {8, 8}}, {{0, 7}, {8, 7}}, {{0, 6}, {8, 
-                    6}}, {{0, 5}, {8, 5}}, {{0, 4}, {8, 4}}, {{0, 3}, {8, 
-                    3}}, {{0, 2}, {8, 2}}, {{0, 1}, {8, 1}}, {{0, 0}, {8, 
-                    0}}}],
-                    Antialiasing->False]}}, {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 8}}, {{1, 0}, {1, 8}}, {{2, 0}, {2, 
-                    8}}, {{3, 0}, {3, 8}}, {{4, 0}, {4, 8}}, {{5, 0}, {5, 
-                    8}}, {{6, 0}, {6, 8}}, {{7, 0}, {7, 8}}, {{8, 0}, {8, 
-                    8}}}],
-                    Antialiasing->False]}}}},
-                 Epilog->{
-                   GrayLevel[1], 
-                   DiskBox[{4.5, 3.5}, 0.2]},
-                 Frame->False,
-                 FrameLabel->{None, None},
-                 FrameTicks->{{None, None}, {None, None}},
-                 GridLinesStyle->Directive[
-                   GrayLevel[0.5, 0.4]],
-                 
-                 Method->{
-                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
-                   Automatic}], 5->
-                GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSfWfFz+ItZ8ctUT
-chex4oTsI9Y9pPqLXHW4+JSK09v9hMRxmU9tfxOyl1RzCJlLb/PJVU+r/IJL
-nFruJKQeAQA3Pl9B
-                   "], {{0, 0}, {8, 8}}, {0, 1}], {{
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 8}, {8, 8}}, {{0, 7}, {8, 7}}, {{0, 6}, {8, 
-                    6}}, {{0, 5}, {8, 5}}, {{0, 4}, {8, 4}}, {{0, 3}, {8, 
-                    3}}, {{0, 2}, {8, 2}}, {{0, 1}, {8, 1}}, {{0, 0}, {8, 
-                    0}}}],
-                    Antialiasing->False]}}, {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 8}}, {{1, 0}, {1, 8}}, {{2, 0}, {2, 
-                    8}}, {{3, 0}, {3, 8}}, {{4, 0}, {4, 8}}, {{5, 0}, {5, 
-                    8}}, {{6, 0}, {6, 8}}, {{7, 0}, {7, 8}}, {{8, 0}, {8, 
-                    8}}}],
-                    Antialiasing->False]}}}},
-                 Epilog->{
-                   GrayLevel[1], 
-                   DiskBox[{4.5, 4.5}, 0.2]},
-                 Frame->False,
-                 FrameLabel->{None, None},
-                 FrameTicks->{{None, None}, {None, None}},
-                 GridLinesStyle->Directive[
-                   GrayLevel[0.5, 0.4]],
-                 
-                 Method->{
-                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 6->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTshflJpDSD0u
-daS6k5B9xLqHVH+Rqw4Xn1JxerufkDgu86ntb0L2kmoOIXPpbT656mmVX3CJ
-U8udhNQjAABAtl9B
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzmkGo+sebgkic33mllDi55WptDar6mdXxRK/wJqceljtb5gpD7
+SDcHAPdlaeg=
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1637,7 +1631,6 @@ U8udhNQjAABAtl9B
                     Antialiasing->False]}}, {
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
                     StyleBox[
                     LineBox[{{{0, 0}, {0, 8}}, {{1, 0}, {1, 8}}, {{2, 0}, {2, 
                     8}}, {{3, 0}, {3, 8}}, {{4, 0}, {4, 8}}, {{5, 0}, {5, 
@@ -1645,8 +1638,8 @@ U8udhNQjAABAtl9B
                     8}}}],
                     Antialiasing->False]}}}},
                  Epilog->{
-                   GrayLevel[1], 
-                   DiskBox[{4.5, 1.5}, 0.2]},
+                   PointSize[Large], 
+                   PointBox[{{0.5, 5.5}, {0.5, 6.5}, {0.5, 4.5}, {1.5, 5.5}}]},
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -1657,9 +1650,9 @@ U8udhNQjAABAtl9B
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 7->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTshflJpDSD0u
-daS6k5B9xLqHVH+Rqw4Xn1JxerufkDgu86ntb0L2kmoOIXPpbT611FMrHHGJ
-k+tO8tMnADVoXhI=
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzmkGo+sebgkic33mllDi55WptDar6mdXxRO/wHKj3TL/0DAAw6
+axc=
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1692,9 +1685,9 @@ k+tO8tMnADVoXhI=
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 8->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTshflJpDSD0u
-daS6k5B9xLqHVH+Rq44QIDdeB8r9lOYjcs0nN57JVTdQ5lNLPbXCEZc4ue4k
-P30CAFpNXOM=
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzmkGo+sebgkic33mllDi55WptDar6mdXxRO/zJzcfEipNqDi71
+5JsDABPcaeg=
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1716,7 +1709,7 @@ P30CAFpNXOM=
                     Antialiasing->False]}}}},
                  Epilog->{
                    GrayLevel[1], 
-                   DiskBox[{5.5, 3.5}, 0.2]},
+                   DiskBox[{7.5, 6.5}, 0.2]},
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -1727,9 +1720,9 @@ P30CAFpNXOM=
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 9->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTshflJpDSD0u
-daSaT8g+Yt1Drr2UxhcudxErT2v347KfXPMpTbeExHHJU5o+B8p8aqmnVjji
-EifXneSnTwCUql4S
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzmkGo+sebgkic33mllDi55WptDab4mZA658U7IHnLtxWUevfIF
+LvXEmoMJAP0xZ4o=
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1751,9 +1744,7 @@ EifXneSnTwCUql4S
                     Antialiasing->False]}}}},
                  Epilog->{
                    PointSize[Large], 
-                   
-                   PointBox[{{5.5, 3.5}, {5.5, 4.5}, {5.5, 2.5}, {4.5, 3.5}, {
-                    6.5, 3.5}}]},
+                   PointBox[{{7.5, 6.5}, {7.5, 7.5}, {7.5, 5.5}, {6.5, 6.5}}]},
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -1764,9 +1755,9 @@ EifXneSnTwCUql4S
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 10->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTi3zyVVPrL2E
-wotSdYTsHaj4IlYdrd2Py35yzac03RISxyVPafocKPOppZ5a4YhLnFx3kp8+
-AT4OW7Q=
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzmkGo+sebgkic33mllDi55WptDab4mZA658U7IHnLtJdccauUL
+Qu4gJI6pDgDgyWeK
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1779,7 +1770,6 @@ AT4OW7Q=
                     Antialiasing->False]}}, {
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
                     StyleBox[
                     LineBox[{{{0, 0}, {0, 8}}, {{1, 0}, {1, 8}}, {{2, 0}, {2, 
                     8}}, {{3, 0}, {3, 8}}, {{4, 0}, {4, 8}}, {{5, 0}, {5, 
@@ -1789,8 +1779,8 @@ AT4OW7Q=
                  Epilog->{
                    PointSize[Large], 
                    
-                   PointBox[{{5.5, 3.5}, {5.5, 4.5}, {5.5, 2.5}, {4.5, 3.5}, {
-                    6.5, 3.5}, {5.5, 1.5}, {4.5, 2.5}, {6.5, 2.5}}]},
+                   PointBox[{{7.5, 6.5}, {7.5, 7.5}, {7.5, 5.5}, {6.5, 6.5}, {
+                    6.5, 7.5}}]},
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -1801,9 +1791,9 @@ AT4OW7Q=
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 11->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTqn7yHUPqf6i
-VzyS6i9i1ZEbX8Sqo7X7cdlPrvmUpltC4rjkKU2fA2U+tdRTKxxxiZPrTvLT
-JwDgSlzj
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzmkGo+sebgkic33mkVbpSqI9ccUuORkH5qxTsh+3DZT6z5A5Uv
+cKknVhxTHQBY9WxG
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1826,9 +1816,8 @@ JwDgSlzj
                  Epilog->{
                    PointSize[Large], 
                    
-                   PointBox[{{5.5, 3.5}, {5.5, 4.5}, {5.5, 2.5}, {4.5, 3.5}, {
-                    6.5, 3.5}, {5.5, 1.5}, {4.5, 2.5}, {6.5, 2.5}, {6.5, 
-                    1.5}, {7.5, 2.5}}]},
+                   PointBox[{{7.5, 6.5}, {7.5, 7.5}, {7.5, 5.5}, {6.5, 6.5}, {
+                    6.5, 7.5}, {7.5, 4.5}, {6.5, 5.5}}]},
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -1839,9 +1828,9 @@ JwDgSlzj
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 12->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTqn7yHUPqf6i
-VjgTMp9UfxGrjlzzCdlLqfnkqiNWH7X8S+10Sq66gTKfWuqpFY64xMl1J/np
-EwDhRV4S
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzmkGo+sebgkic33ok1h5B+UvMLse4h1RxS45GQfmrFOyH7cNlP
+rPkDlS9wqSdWHFMdAH2Raxc=
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1862,11 +1851,8 @@ EwDhRV4S
                     8}}}],
                     Antialiasing->False]}}}},
                  Epilog->{
-                   PointSize[Large], 
-                   
-                   PointBox[{{5.5, 3.5}, {5.5, 4.5}, {5.5, 2.5}, {4.5, 3.5}, {
-                    6.5, 3.5}, {5.5, 1.5}, {4.5, 2.5}, {6.5, 2.5}, {6.5, 
-                    1.5}, {7.5, 2.5}, {6.5, 4.5}, {7.5, 3.5}}]},
+                   GrayLevel[1], 
+                   DiskBox[{6.5, 4.5}, 0.2]},
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -1877,9 +1863,9 @@ EwDhRV4S
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 13->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTqn7yHUPqf6i
-VjiTay+t4ova9tLK/ejqiNVH6/xCrnvJVTdQ5lNLPbXCEZc4ue4kP30CAP2t
-XhI=
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzm0Eoclzy58U6tdEIt9aTmO2LlqZ3+cekjVhyX/EDnF1LNx6We
+WHFMdQD+VWeK
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1902,9 +1888,8 @@ XhI=
                  Epilog->{
                    PointSize[Large], 
                    
-                   PointBox[{{5.5, 3.5}, {5.5, 4.5}, {5.5, 2.5}, {4.5, 3.5}, {
-                    6.5, 3.5}, {5.5, 1.5}, {4.5, 2.5}, {6.5, 2.5}, {6.5, 
-                    1.5}, {7.5, 2.5}, {6.5, 4.5}, {7.5, 3.5}, {7.5, 4.5}}]},
+                   PointBox[{{6.5, 4.5}, {6.5, 5.5}, {6.5, 3.5}, {5.5, 4.5}, {
+                    7.5, 4.5}}]},
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -1915,9 +1900,9 @@ XhI=
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 14->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTqn7yHUPqf6i
-VjiTay+t4ova9tLK/ejqiNVH6/xCrntJNYfa5hNrH7HxQqx6aoUjLnFy3Ul+
-+gQABadc4w==
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzm0Eoclzy58U6tdEIt9aTmO2LlaR2eAxWPA50vcKknVhxTHQAH
+3GeK
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -1939,7 +1924,7 @@ VjiTay+t4ova9tLK/ejqiNVH6/xCrntJNYfa5hNrH7HxQqx6aoUjLnFy3Ul+
                     Antialiasing->False]}}}},
                  Epilog->{
                    GrayLevel[1], 
-                   DiskBox[{6.5, 5.5}, 0.2]},
+                   DiskBox[{7.5, 5.5}, 0.2]},
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -1950,159 +1935,9 @@ VjiTay+t4ova9tLK/ejqiNVH6/xCrntJNYfa5hNrH7HxQqx6aoUjLnFy3Ul+
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
                    Automatic}], 15->
                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTqn7yHUPqf6i
-VjiTay+t4ova9tLK/ejqCOmjV34h173ofErNIVWckH3o6khVT6o8rfMXLn2U
-p08Az1BfQQ==
-                   "], {{0, 0}, {8, 8}}, {0, 1}], {{
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 8}, {8, 8}}, {{0, 7}, {8, 7}}, {{0, 6}, {8, 
-                    6}}, {{0, 5}, {8, 5}}, {{0, 4}, {8, 4}}, {{0, 3}, {8, 
-                    3}}, {{0, 2}, {8, 2}}, {{0, 1}, {8, 1}}, {{0, 0}, {8, 
-                    0}}}],
-                    Antialiasing->False]}}, {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 8}}, {{1, 0}, {1, 8}}, {{2, 0}, {2, 
-                    8}}, {{3, 0}, {3, 8}}, {{4, 0}, {4, 8}}, {{5, 0}, {5, 
-                    8}}, {{6, 0}, {6, 8}}, {{7, 0}, {7, 8}}, {{8, 0}, {8, 
-                    8}}}],
-                    Antialiasing->False]}}}},
-                 Epilog->{
-                   PointSize[Large], 
-                   
-                   PointBox[{{6.5, 5.5}, {6.5, 6.5}, {6.5, 4.5}, {5.5, 5.5}, {
-                    7.5, 5.5}}]},
-                 Frame->False,
-                 FrameLabel->{None, None},
-                 FrameTicks->{{None, None}, {None, None}},
-                 GridLinesStyle->Directive[
-                   GrayLevel[0.5, 0.4]],
-                 
-                 Method->{
-                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
-                   Automatic}], 16->
-                GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTqn7yHUPqf6i
-VjiTay+t4ova9tLK/ejqCOmjV34h173ofGrZS2k6xKWPWuUYteWp5S/yzQcA
-9TBfQQ==
-                   "], {{0, 0}, {8, 8}}, {0, 1}], {{
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 8}, {8, 8}}, {{0, 7}, {8, 7}}, {{0, 6}, {8, 
-                    6}}, {{0, 5}, {8, 5}}, {{0, 4}, {8, 4}}, {{0, 3}, {8, 
-                    3}}, {{0, 2}, {8, 2}}, {{0, 1}, {8, 1}}, {{0, 0}, {8, 
-                    0}}}],
-                    Antialiasing->False]}}, {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 8}}, {{1, 0}, {1, 8}}, {{2, 0}, {2, 
-                    8}}, {{3, 0}, {3, 8}}, {{4, 0}, {4, 8}}, {{5, 0}, {5, 
-                    8}}, {{6, 0}, {6, 8}}, {{7, 0}, {7, 8}}, {{8, 0}, {8, 
-                    8}}}],
-                    Antialiasing->False]}}}},
-                 Epilog->{
-                   PointSize[Large], 
-                   
-                   PointBox[{{6.5, 5.5}, {6.5, 6.5}, {6.5, 4.5}, {5.5, 5.5}, {
-                    7.5, 5.5}, {6.5, 7.5}, {5.5, 6.5}, {7.5, 6.5}}]},
-                 Frame->False,
-                 FrameLabel->{None, None},
-                 FrameTicks->{{None, None}, {None, None}},
-                 GridLinesStyle->Directive[
-                   GrayLevel[0.5, 0.4]],
-                 
-                 Method->{
-                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
-                   Automatic}], 17->
-                GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTqn7yHUPqf6i
-VjiTay+t4ova9tLK/ejqCOmjV34h173ofFLTD63yHS59A1XOkGo+uf4i1/0M
-DACqtGBw
-                   "], {{0, 0}, {8, 8}}, {0, 1}], {{
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 8}, {8, 8}}, {{0, 7}, {8, 7}}, {{0, 6}, {8, 
-                    6}}, {{0, 5}, {8, 5}}, {{0, 4}, {8, 4}}, {{0, 3}, {8, 
-                    3}}, {{0, 2}, {8, 2}}, {{0, 1}, {8, 1}}, {{0, 0}, {8, 
-                    0}}}],
-                    Antialiasing->False]}}, {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 8}}, {{1, 0}, {1, 8}}, {{2, 0}, {2, 
-                    8}}, {{3, 0}, {3, 8}}, {{4, 0}, {4, 8}}, {{5, 0}, {5, 
-                    8}}, {{6, 0}, {6, 8}}, {{7, 0}, {7, 8}}, {{8, 0}, {8, 
-                    8}}}],
-                    Antialiasing->False]}}}},
-                 Epilog->{
-                   PointSize[Large], 
-                   
-                   PointBox[{{6.5, 5.5}, {6.5, 6.5}, {6.5, 4.5}, {5.5, 5.5}, {
-                    7.5, 5.5}, {6.5, 7.5}, {5.5, 6.5}, {7.5, 6.5}, {7.5, 
-                    7.5}}]},
-                 Frame->False,
-                 FrameLabel->{None, None},
-                 FrameTicks->{{None, None}, {None, None}},
-                 GridLinesStyle->Directive[
-                   GrayLevel[0.5, 0.4]],
-                 
-                 Method->{
-                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
-                   Automatic}], 18->
-                GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTqn7yHUPqf6i
-VjiTay+t4ova9tLK/ejqCOmjV34h173ofFLTD63yHS59tA43WucvXPooT7cA
-58Jizg==
-                   "], {{0, 0}, {8, 8}}, {0, 1}], {{
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 8}, {8, 8}}, {{0, 7}, {8, 7}}, {{0, 6}, {8, 
-                    6}}, {{0, 5}, {8, 5}}, {{0, 4}, {8, 4}}, {{0, 3}, {8, 
-                    3}}, {{0, 2}, {8, 2}}, {{0, 1}, {8, 1}}, {{0, 0}, {8, 
-                    0}}}],
-                    Antialiasing->False]}}, {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 8}}, {{1, 0}, {1, 8}}, {{2, 0}, {2, 
-                    8}}, {{3, 0}, {3, 8}}, {{4, 0}, {4, 8}}, {{5, 0}, {5, 
-                    8}}, {{6, 0}, {6, 8}}, {{7, 0}, {7, 8}}, {{8, 0}, {8, 
-                    8}}}],
-                    Antialiasing->False]}}}},
-                 Epilog->{
-                   PointSize[Large], 
-                   
-                   PointBox[{{6.5, 5.5}, {6.5, 6.5}, {6.5, 4.5}, {5.5, 5.5}, {
-                    7.5, 5.5}, {6.5, 7.5}, {5.5, 6.5}, {7.5, 6.5}, {7.5, 
-                    7.5}}]},
-                 Frame->False,
-                 FrameLabel->{None, None},
-                 FrameTicks->{{None, None}, {None, None}},
-                 GridLinesStyle->Directive[
-                   GrayLevel[0.5, 0.4]],
-                 
-                 Method->{
-                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
-                   Automatic}], 19->
-                GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPS6OK4ALHy1DafVHvJlSckTqn7yHUPqf6i
-VjiTay+t4ova9tLK/ejqCOmjV34h173ofFLTD63yHS59tA43WucvXPrITScI
-dQC/w2Gf
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPSuAC6PCE+seYTay+13EmqOkLqSTUHl35S
+zafUPUPNXlzm0EoclzytzcGlj9rqSc13xMrTOh9RO/wHKr+Qaj4u9cSKY6oD
+AMRBZls=
                    "], {{0, 0}, {8, 8}}, {0, 1}], {{
                     {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -2124,7 +1959,7 @@ dQC/w2Gf
                     Antialiasing->False]}}}},
                  Epilog->{
                    GrayLevel[1], 
-                   DiskBox[{6.5, 7.5}, 0.2]},
+                   DiskBox[{2.5, 4.5}, 0.2]},
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -2133,7 +1968,7 @@ dQC/w2Gf
                  
                  Method->{
                   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
-                   Automatic}]}, Dynamic[$CellContext`i26$$],
+                   Automatic}]}, Dynamic[$CellContext`i7$$],
                 Alignment->Automatic,
                 BaseStyle->"ListAnimateCore",
                 ImageSize->All,
@@ -2182,9 +2017,9 @@ dQC/w2Gf
            CurrentValue["PreviousFormatTime"], 
            CurrentValue["CurrentFormatTime"]]& , {
            
-           Manipulate`Dump`controllerLink[{$CellContext`i26$$, \
-$CellContext`i26$214079$$}, "X1", 
-            If["DefaultAbsolute", True, "JB1"], False, {1, 19, 1}, 19, 1.]}], 
+           Manipulate`Dump`controllerLink[{$CellContext`i7$$, \
+$CellContext`i7$8286$$}, "X1", 
+            If["DefaultAbsolute", True, "JB1"], False, {1, 15, 1}, 15, 1.]}], 
          CurrentValue[{
           "ControllerData", {
            "Gamepad", "Joystick", "Multi-Axis Controller"}}], {}]],
@@ -2213,9 +2048,9 @@ $CellContext`i26$214079$$}, "X1",
    3.7072117166499033`*^9, 3.707211905501198*^9, 3.7072135618769903`*^9, 
    3.70721545751068*^9, 3.707228721541746*^9, 3.707229205204672*^9, 
    3.707229242294504*^9, 3.707229287692124*^9, 3.707229322921728*^9, 
-   3.7072293602209787`*^9, 3.707229508850185*^9, 3.707229828058363*^9},
- CellLabel->
-  "Out[396]=",ExpressionUUID->"3ba106e9-1530-49ab-9a19-61241e3f00cf"]
+   3.7072293602209787`*^9, 3.707229508850185*^9, 3.707229828058363*^9, {
+   3.707253064586924*^9, 3.707253070545454*^9}},
+ CellLabel->"Out[91]=",ExpressionUUID->"a96e0985-80d5-424d-b19b-9b276e978c60"]
 }, Open  ]]
 }, Open  ]],
 
@@ -2246,16 +2081,17 @@ displayed.\
 21da783800a9"],
 
 Cell["\<\
-Let\[CloseCurlyQuote]s look at a histogram of our data which counts the \
+Let\[CloseCurlyQuote]s look at a histogram of our data. This displays the \
 number of avalanches of each size. In this context size refers to how many \
-cells were affected:\
+cells toppled:\
 \>", "Direction",
  CellChangeTimes->{{3.700774554822753*^9, 3.700774560088324*^9}, {
   3.707175895017067*^9, 3.707175897988942*^9}, {3.7071760614108877`*^9, 
   3.7071760764434977`*^9}, {3.707176120264221*^9, 3.707176148222722*^9}, {
   3.707176299912181*^9, 3.707176316444985*^9}, {3.7071787568558683`*^9, 
-  3.7071787574744043`*^9}, {3.70717897417844*^9, 
-  3.707179041500227*^9}},ExpressionUUID->"3adf6ca5-9f14-4a81-bda1-\
+  3.7071787574744043`*^9}, {3.70717897417844*^9, 3.707179041500227*^9}, {
+  3.7072533700032883`*^9, 
+  3.707253392286021*^9}},ExpressionUUID->"3adf6ca5-9f14-4a81-bda1-\
 dc6a9fa0b03c"],
 
 Cell[CellGroupData[{
@@ -2272,15 +2108,14 @@ Cell[BoxData[{
  CellChangeTimes->{{3.7071790471149883`*^9, 3.707179097402431*^9}, {
   3.70718039219431*^9, 3.7071803931197577`*^9}, {3.707180429266321*^9, 
   3.7071804376449003`*^9}, {3.7071804877442417`*^9, 3.7071804935603037`*^9}},
- CellLabel->
-  "In[397]:=",ExpressionUUID->"b8af9c4b-37f3-4683-ae21-619f779a4781"],
+ CellLabel->"In[92]:=",ExpressionUUID->"b8af9c4b-37f3-4683-ae21-619f779a4781"],
 
 Cell[BoxData[
  GraphicsBox[{{
     {RGBColor[0.987148, 0.8073604000000001, 0.49470040000000004`], EdgeForm[{
-     Opacity[0.6755], Thickness[Small]}], {}, {
+     Opacity[0.7], Thickness[Small]}], {}, {
       {RGBColor[0.987148, 0.8073604000000001, 0.49470040000000004`], 
-       EdgeForm[{Opacity[0.6755], Thickness[Small]}], {
+       EdgeForm[{Opacity[0.7], Thickness[Small]}], {
         TagBox[
          TooltipBox[
           TagBox[{
@@ -2291,16 +2126,16 @@ Cell[BoxData[
                  GrayLevel[0.5], 
                  AbsoluteThickness[1.5], 
                  Opacity[0.66]}], {}, {}], 
-              RectangleBox[{3.5, 0}, {4.5, 1.}, "RoundingRadius" -> 0]},
+              RectangleBox[{0., 0}, {2., 2.}, "RoundingRadius" -> 0]},
              
-             ImageSizeCache->{{23.31204963971186, 
-              187.86329063250605`}, {-104.18862053852635`, 
-              92.7530374448832}}]},
-           StatusArea[#, 1]& ,
-           TagBoxNote->"1"],
-          StyleBox["1", {}, StripOnInput -> False]],
+             ImageSizeCache->{{23.31204963971177, 
+              187.86329063250605`}, {-104.18862053852637`, 
+              92.75303744488319}}]},
+           StatusArea[#, 2]& ,
+           TagBoxNote->"2"],
+          StyleBox["2", {}, StripOnInput -> False]],
          Annotation[#, 
-          Style[1, {}], "Tooltip"]& ]}, {
+          Style[2, {}], "Tooltip"]& ]}, {
         TagBox[
          TooltipBox[
           TagBox[{
@@ -2311,11 +2146,10 @@ Cell[BoxData[
                  GrayLevel[0.5], 
                  AbsoluteThickness[1.5], 
                  Opacity[0.66]}], {}, {}], 
-              RectangleBox[{4.5, 0}, {5.5, 1.}, "RoundingRadius" -> 0]},
+              RectangleBox[{2., 0}, {4., 1.}, "RoundingRadius" -> 0]},
              
              ImageSizeCache->{{187.36329063250605`, 
-              351.91453162530036`}, {-104.18862053852635`, 
-              92.7530374448832}}]},
+              351.9145316253003}, {-5.967791546821587, 92.75303744488319}}]},
            StatusArea[#, 1]& ,
            TagBoxNote->"1"],
           StyleBox["1", {}, StripOnInput -> False]],
@@ -2324,13 +2158,13 @@ Cell[BoxData[
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
   AxesLabel->{None, None},
-  AxesOrigin->{3.46, 0},
+  AxesOrigin->{-0.08, 0},
   FrameLabel->{{None, None}, {None, None}},
   FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
   GridLines->{None, None},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
-  PlotRange->{{3.5, 5.5}, {All, All}},
+  PlotRange->{{0., 4.}, {All, All}},
   PlotRangePadding->{{
      Scaled[0.02], 
      Scaled[0.02]}, {
@@ -2346,9 +2180,8 @@ Cell[BoxData[
    3.707211717064947*^9, 3.707211907133217*^9, 3.7072135635368357`*^9, 
    3.707215460321766*^9, 3.7072292425958443`*^9, 3.707229287947296*^9, 
    3.707229323338122*^9, 3.707229360338112*^9, 3.707229510587901*^9, 
-   3.707229828165422*^9},
- CellLabel->
-  "Out[398]=",ExpressionUUID->"648cf355-dd7c-457d-850b-7a40d17afc07"]
+   3.707229828165422*^9, {3.707253066050221*^9, 3.707253070636656*^9}},
+ CellLabel->"Out[93]=",ExpressionUUID->"0ce746bb-e8d2-4f73-b9ba-3a942cc786e4"]
 }, Open  ]],
 
 Cell["\<\
@@ -2381,20 +2214,19 @@ Cell[BoxData[{
    3.707180459610126*^9, 3.7071804624557543`*^9}, {3.707183476336927*^9, 
    3.707183492929605*^9}, 3.707211816740341*^9, {3.707213421630692*^9, 
    3.707213424659083*^9}},
- CellLabel->
-  "In[399]:=",ExpressionUUID->"6e9b2bf8-7aae-415e-bf22-c7797bfb85b8"],
+ CellLabel->"In[94]:=",ExpressionUUID->"6e9b2bf8-7aae-415e-bf22-c7797bfb85b8"],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{{}, {
       {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
        0.012833333333333334`], AbsoluteThickness[1.6], 
-       PointBox[{{5., 1.}, {4., 1.}}]}}, {}}}, {}, {}, {{}, {}}, {{}, {}}},
+       PointBox[{{1., 2.}, {3., 1.}}]}}, {}}}, {}, {}, {{}, {}}, {{}, {}}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
   AxesLabel->{
     FormBox["\"Size\"", TraditionalForm], 
     FormBox["\"Frequency (Count)\"", TraditionalForm]},
-  AxesOrigin->{3.9843750000000004`, 0},
+  AxesOrigin->{0.96875, 0},
   DisplayFunction->Identity,
   Frame->{{False, False}, {False, False}},
   FrameLabel->{{None, None}, {None, None}},
@@ -2415,7 +2247,7 @@ Cell[BoxData[
          Part[#, 1]], 
         (Identity[#]& )[
          Part[#, 2]]}& )}},
-  PlotRange->{{4., 5.}, {0, 2.}},
+  PlotRange->{{1., 3.}, {0, 2.}},
   PlotRangeClipping->True,
   PlotRangePadding->{{
      Scaled[0.02], 
@@ -2430,9 +2262,9 @@ Cell[BoxData[
    3.7071827350031013`*^9}, 3.7072117171728687`*^9, 3.707211907228571*^9, 
    3.707213563680273*^9, 3.707215460443722*^9, 3.707229243009185*^9, 
    3.707229288074204*^9, 3.707229323393078*^9, 3.7072293604221277`*^9, 
-   3.707229510676444*^9, 3.7072298282350082`*^9},
- CellLabel->
-  "Out[400]=",ExpressionUUID->"4f165a55-a0f3-4ed9-a45c-0046f4ce8fea"]
+   3.707229510676444*^9, 3.7072298282350082`*^9, {3.7072530663747177`*^9, 
+   3.707253070720998*^9}},
+ CellLabel->"Out[95]=",ExpressionUUID->"5519db0e-a39e-4778-b174-dc91fd6ac54c"]
 }, Open  ]],
 
 Cell["\<\
@@ -2484,21 +2316,20 @@ Cell[BoxData[{
    3.707179413634046*^9, {3.707180827577713*^9, 3.7071808305811996`*^9}, {
    3.707180865059113*^9, 3.707180919779633*^9}, {3.7071834231049433`*^9, 
    3.70718342452932*^9}, {3.7072134299791927`*^9, 3.707213433943076*^9}},
- CellLabel->
-  "In[401]:=",ExpressionUUID->"8fcc9e0d-3aab-4d2b-91a3-855fe605fd5f"],
+ CellLabel->"In[96]:=",ExpressionUUID->"8fcc9e0d-3aab-4d2b-91a3-855fe605fd5f"],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{{}, {
       {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
        0.012833333333333334`], AbsoluteThickness[1.6], 
-       PointBox[{{0.6989700043360189, 0.}, {0.6020599913279624, 
+       PointBox[{{0., 0.3010299956639812}, {0.47712125471966244`, 
         0.}}]}}, {}}}, {}, {}, {{}, {}}, {{}, {}}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
   AxesLabel->{
     FormBox["\"Size of Avalanche\"", TraditionalForm], 
     FormBox["\"Frequency of Avalanche\"", TraditionalForm]},
-  AxesOrigin->{0.6005457723747115, 0},
+  AxesOrigin->{0, 0},
   DisplayFunction->Identity,
   Frame->{{False, False}, {False, False}},
   FrameLabel->{{None, None}, {None, None}},
@@ -2519,12 +2350,12 @@ Cell[BoxData[
          Part[#, 1]], 
         (Identity[#]& )[
          Part[#, 2]]}& )}},
-  PlotRange->{{0.6020599913279624, 0.6989700043360189}, {-1., 1.}},
+  PlotRange->{{0, 0.47712125471966244`}, {0, 0.3010299956639812}},
   PlotRangeClipping->True,
   PlotRangePadding->{{
      Scaled[0.02], 
      Scaled[0.02]}, {
-     Scaled[0.05], 
+     Scaled[0.02], 
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{
@@ -2535,9 +2366,9 @@ Cell[BoxData[
    3.7071827351670237`*^9}, 3.707211717528545*^9, 3.7072119073276*^9, 
    3.7072135638121767`*^9, 3.707215460529004*^9, 3.7072292430535183`*^9, 
    3.7072292881244507`*^9, 3.7072293234436197`*^9, 3.707229360516368*^9, 
-   3.707229510746337*^9, 3.7072298284914703`*^9},
- CellLabel->
-  "Out[403]=",ExpressionUUID->"08064d46-eec4-4e4c-b74f-7725073c08fd"]
+   3.707229510746337*^9, 3.7072298284914703`*^9, {3.707253066428935*^9, 
+   3.7072530707709427`*^9}},
+ CellLabel->"Out[98]=",ExpressionUUID->"bfb65f9b-09e9-4b52-afd2-40b431284fe4"]
 }, Open  ]],
 
 Cell["Let\[CloseCurlyQuote]s fit a line to the data and determine what \
@@ -2564,10 +2395,11 @@ Cell[BoxData[
  InitializationCell->True,
  CellChangeTimes->{{3.707180975121462*^9, 3.707180977887908*^9}, {
   3.707183796682633*^9, 3.70718379727956*^9}},
- CellLabel->
-  "In[404]:=",ExpressionUUID->"b6daabc2-0ad9-457d-8775-f375877516dd"],
+ CellLabel->"In[99]:=",ExpressionUUID->"b6daabc2-0ad9-457d-8775-f375877516dd"],
 
-Cell[BoxData["0.`"], "Output",
+Cell[BoxData[
+ RowBox[{"0.3010299956639811`", "\[VeryThinSpace]", "-", 
+  RowBox[{"0.6309297535714574`", " ", "x"}]}]], "Output",
  CellChangeTimes->{
   3.707179418152236*^9, 3.707180517322948*^9, 3.707180952925025*^9, 
    3.707181103079521*^9, 3.7071812206289883`*^9, 3.707181459988456*^9, 
@@ -2576,9 +2408,9 @@ Cell[BoxData["0.`"], "Output",
    3.707183823657566*^9, 3.707211717660861*^9, 3.7072119074911013`*^9, 
    3.707213563997394*^9, 3.707215460594119*^9, 3.707229243098802*^9, 
    3.70722928817607*^9, 3.707229323486758*^9, 3.707229360550044*^9, 
-   3.7072295107947187`*^9, 3.70722982857528*^9},
- CellLabel->
-  "Out[404]=",ExpressionUUID->"c7b0ae4b-815e-4451-af68-b84cbc1a3e62"]
+   3.7072295107947187`*^9, 3.70722982857528*^9, {3.707253066478405*^9, 
+   3.707253070800068*^9}},
+ CellLabel->"Out[99]=",ExpressionUUID->"88463ede-74d7-4d5c-bcf8-7f8a76ca7a25"]
 }, Open  ]],
 
 Cell["\<\
@@ -2612,41 +2444,54 @@ Cell[BoxData[{
   RowBox[{"logPlot", ",", "fitLinePlot"}], "]"}]}], "Input",
  InitializationCell->True,
  CellLabel->
-  "In[405]:=",ExpressionUUID->"a4bbf7c0-b08b-49c5-ad67-17fbddbbc8e3"],
+  "In[100]:=",ExpressionUUID->"a4bbf7c0-b08b-49c5-ad67-17fbddbbc8e3"],
 
 Cell[BoxData[
  GraphicsBox[{{{}, {{{}, {
        {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
         0.012833333333333334`], AbsoluteThickness[1.6], 
-        PointBox[{{0.6989700043360189, 0.}, {0.6020599913279624, 
+        PointBox[{{0., 0.3010299956639812}, {0.47712125471966244`, 
          0.}}]}}, {}}}, {}, {}, {{}, {}}, {{}, {}}}, {{{{}, {}, 
       TagBox[{
         {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], 
          Opacity[1.], LineBox[CompressedData["
-1:eJxF0HssFAAcB/A7To7LcXrY0bETlVdMUlJRWuRR82iyvCYkvZBWWk3X7qQQ
-azcp70dKN47cWcsp42bLPNIxbNzVdZPHeZVzoe6qLb/fb/vuu89/3/2YcVdD
-EnQIBELQ3/xr/4TJgfap64cJ/4/kY54io4d5rXtPeVFJMz0eHNA7/LqUng4O
-j1e3PaazwePO933y6FxwxZZTWQ/pNWAWuXnnA7oAfCaikr+wKAZTtKxIX8t+
-sG3w3GRnziD4Rp+HV9HSKNhMQJMSiTJwi9ynp/+gHNyRXGoRoVSAVTsOGddf
-/gbWWeGZWNhOg921sS2hDUpwD9utr8t+HmxVMLNSN7cAnlHLpEMu38E1063d
-1Ec/wFTGi3mFYgmce0GYWGGzDF725imSMtXgdFexYGvnT7CsQZwzwFwFryUP
-FtvdWgM7HNHXJLb+AvtWMc83mWnwX4wY6y+RWrCj8jRlOIjgve5Nxgtk8Sqa
-9L6Yv72ECL7o1jpqEKAD5p2Iq3i3jFbNmJtMFOqChaG+utxjJHCmH6dcMIFm
-jvuPVHP0wAf2sbl01w3gSMv+FaIErerOk6ew9MFFpOj0EBsy7pcKq3TEaL07
-rDCPVAMwoS6aLzc1BKc94+eZdqDbHLLJtCsUMM0/zfEedSN4zOmjJEOEbizz
-slFEG4Gj+O40hgZ9l1PJGntFBddPMoqpgcbg7FJOrPQkOj5k1rYhGL1NJGoM
-Ckc/zD/blRuHTnJ/umiYgbZmb/bTr0Vr9t82Gn6JHp39+qmWhy4Ib4463oTW
-2odc44jQYwP5ZboS9Jss9TnJEJrrGWNXPYIOeL5bcFSKfnuz9wNrCl3otDc/
-WIlOlZeEMefRuwIvydqX0CTiYE2BGv1Z6Jkcu4oWJVc7u/xGP7GiqLRa9B8U
-Sxnt
+1:eJwB4QQe+yFib1JlAgAAAE0AAAACAAAASmXo0cDpdT4jCVIZE0TTPwRDGnDf
+GVQ/r8pzoWQ30z8zn5icsxlkPzuMlSm2KtM/S83Xsp0ZdD9TD9k5WRHTP1dk
+972SGYQ/gxVgWp/e0j/dL4dDjRmUP+IhbpsredI/oBVPhooZpD+iOoodRK7R
+P4EIsyeJGbQ/IGzCIXUY0D9YWaGv8PHEP374aK8kUck/C/+BXEcezz+8j0cV
+/eXCPyVR7ujDi9Q/IH6c1SE2uT93zjk/mPTZP6AiYW1sHqc/F7QR3gEB3z8A
+2GZEl+dyv7biQ8zPPOI/kG9t0nj6rb/Cap0bWezkP+DR1n6Ii7y/9SY9D61t
+5z/+/kBQTJjEvwL5qxAbJeo/xjoTBl5zy782/2C2U67sP8d/9eDo7NC/zIQ0
+zsYq7z8hVg0HBRDUvx+Q6/mp7vA/W3+j/2V317/r99/e1TDyPxNtPPt3pNq/
+pOq7yg6O8z+prVPJzhXevw4dp+/k5PQ/GnHL74O74L+MabVmoCT2P6Btbvz4
+TuK/9kCr5Gh/9z+Uk1BykATkv3QyxLQWw/g/yhu0aQCd5b/frsSL0SH6P27N
+VsqSV+e/+2rUmyl6+z8MeQ9PFgrpvytBB/5mu/w/6oZJVXKf6r9HoiFnsRf+
+Pzi+wsTwVuy/dx1fIuFc/z/EV721R/HtvyzsVQvXTQBATOvNyo+D778TD/AI
+xPoAQCHUjiT9m/C/BL+bryOcAUC9Y3eknmfxv2s0u9kJSwJAD4j/WFFE8r+r
+SWKgvvYCQGCpkp/8HPO/9esaEOaWA0DQe+YmFOfzv7VTRwOURARA+OLZ4jzC
+9L9/SIWftOYEQD/7jd/RjvW/Id1K2KOFBUCEEE1uX1f2vzo3hJQZMgZAgLqr
+Mf4w979cHs/5AdMGQJwVyzUJ/Pe/9cqN4nCBB0BvBYpuJdj4v5gEXnRSJAhA
+ZKYJ6K2l+b8T3rWiAsQIQFRElPMub/q/BX2BVDlxCUD9dr4zwUn7vwCpXq/i
+EgpAxVqptL8V/L9ymq+NEsIKQEXTM2rP8vy/vSuICBFuC0DDSMmx18v9vxFK
+ciyCDgxAX28fOkyW/r/cLdDTebwMQLMqFffRcf+/sJ4/JOReDUCTy2X6YR8A
+wF2vNhEd/g1ATIBGQteDAMCAhaGB3KoOQGH/diTV8ADAregdmw5MD0AF1wcn
+iVYBwIidhWDeTg9ACJYIR09YAcBkUu0lrlEPQAxVCWcVWgHAHLy8sE1XD0AT
+0wqnoV0BwIqPW8aMYg9AIc8NJ7pkAcBoNpnxCnkPQD3HEyfrcgHAIoQUSAem
+D0Bztx8nTY8BwP44fA3XqA9Ad3YgRxORAcDZ7ePSpqsPQHo1IWfZkgHAkFez
+XUaxD0CBsyKnZZYBwP8qUnOFvA9Aj68lJ36dAcDc0Y+eA9MPQKqnKyevqwHA
+uIb3Y9PVD0CuZixHda0BwJQ7Xymj2A9AsiUtZzuvAcBLpS60Qt4PQLijLqfH
+sgHAunjNyYHpD0DGnzEn4LkBwJYtNY9R7A9Ayl4yR6a7AcBx4pxUIe8PQM0d
+M2dsvQHAKExs38D0D0DUmzSn+MABwAQB1KSQ9w9A11o1x77CAcDgtTtqYPoP
+QNsZNueExAHAvGqjLzD9D0Df2DYHS8YBwJcfC/X//w9A4pc3JxHIAcCUmFnR
+
           "]]}},
-       Annotation[#, "Charting`Private`Tag$214251#1"]& ]}}, {}, {}}},
+       Annotation[#, "Charting`Private`Tag$8458#1"]& ]}}, {}, {}}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
   AxesLabel->{
     FormBox["\"Size of Avalanche\"", TraditionalForm], 
     FormBox["\"Frequency of Avalanche\"", TraditionalForm]},
-  AxesOrigin->{0.6005457723747115, 0},
+  AxesOrigin->{0, 0},
   DisplayFunction->Identity,
   Frame->{{False, False}, {False, False}},
   FrameLabel->{{None, None}, {None, None}},
@@ -2667,12 +2512,12 @@ Sxnt
          Part[#, 1]], 
         (Identity[#]& )[
          Part[#, 2]]}& )}},
-  PlotRange->{{0.6020599913279624, 0.6989700043360189}, {-1., 1.}},
+  PlotRange->{{0, 0.47712125471966244`}, {0, 0.3010299956639812}},
   PlotRangeClipping->True,
   PlotRangePadding->{{
      Scaled[0.02], 
      Scaled[0.02]}, {
-     Scaled[0.05], 
+     Scaled[0.02], 
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{
@@ -2683,9 +2528,9 @@ Sxnt
    3.707211717782085*^9, 3.70721190757467*^9, 3.7072135641065407`*^9, 
    3.707215460679607*^9, 3.707229243270667*^9, 3.707229288255*^9, 
    3.707229323567857*^9, 3.707229360621254*^9, 3.707229510857108*^9, 
-   3.707229828713503*^9},
+   3.707229828713503*^9, {3.7072530665834846`*^9, 3.7072530708727007`*^9}},
  CellLabel->
-  "Out[406]=",ExpressionUUID->"3e7c053f-72f5-4108-95c3-18c22ded9f41"]
+  "Out[101]=",ExpressionUUID->"0639b8a2-9189-4387-af65-fcdad91e1ea2"]
 }, Open  ]],
 
 Cell["\<\
@@ -2772,18 +2617,18 @@ Cell[BoxData[
   3.707213735203382*^9}, {3.707215044939633*^9, 3.707215132409148*^9}, {
   3.7072151788267517`*^9, 3.707215179710738*^9}},
  CellLabel->
-  "In[407]:=",ExpressionUUID->"9045787e-42fd-4bbf-9478-2778eb67d089"],
+  "In[102]:=",ExpressionUUID->"9045787e-42fd-4bbf-9478-2778eb67d089"],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{{}, {}, {
       {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
        0.019444444444444445`], AbsoluteThickness[1.6], 
-       LineBox[{{1., 6.363961030678928}, {2., 
-        0.7071067811865475}}]}}}}, {}, {}, {{}, {}}, {{}, {}}},
+       LineBox[{{1., 2.886751345948129}, {2., 1.1547005383792515`}, {3., 
+        1.1547005383792515`}}]}}}}, {}, {}, {{}, {}}, {{}, {}}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
   AxesLabel->{None, None},
-  AxesOrigin->{0.984375, 0},
+  AxesOrigin->{0.96875, 0},
   DisplayFunction->Identity,
   Frame->{{False, False}, {False, False}},
   FrameLabel->{{None, None}, {None, None}},
@@ -2801,7 +2646,7 @@ Cell[BoxData[
          Part[#, 1]], 
         (Identity[#]& )[
          Part[#, 2]]}& )}},
-  PlotRange->{{1., 2.}, {0, 6.363961030678928}},
+  PlotRange->{{1., 3.}, {0, 2.886751345948129}},
   PlotRangeClipping->True,
   PlotRangePadding->{{
      Scaled[0.02], 
@@ -2813,9 +2658,10 @@ Cell[BoxData[
   3.707213736012692*^9, {3.707215061612523*^9, 3.7072151328310423`*^9}, 
    3.707215180156754*^9, 3.707215460777533*^9, 3.707229243876402*^9, 
    3.7072292884996157`*^9, 3.7072293237416058`*^9, 3.70722936073132*^9, 
-   3.707229510931657*^9, 3.7072298287750607`*^9},
+   3.707229510931657*^9, 3.7072298287750607`*^9, {3.707253066648849*^9, 
+   3.7072530709247103`*^9}},
  CellLabel->
-  "Out[407]=",ExpressionUUID->"c2ba966b-3f36-4256-9496-bf87e525da28"]
+  "Out[102]=",ExpressionUUID->"c6a7c628-83f2-4bee-a365-f9a2fafb240a"]
 }, Open  ]],
 
 Cell["\<\
@@ -2873,11 +2719,11 @@ c5571aae211e"],
 
 Cell["\<\
 Try running the experiment with a larger table. This can be done by adjusting \
-gridSize in the first code-block and reevaluating the notebook.\
+gridSize in the first code-block and re-evaluating the notebook.\
 \>", "Direction",
  CellChangeTimes->{{3.707228744984617*^9, 3.7072288064221983`*^9}, {
-  3.707228921588574*^9, 
-  3.707228983132388*^9}},ExpressionUUID->"1b83bbc0-cc92-4db3-ab42-\
+   3.707228921588574*^9, 3.707228983132388*^9}, 
+   3.707253461335409*^9},ExpressionUUID->"1b83bbc0-cc92-4db3-ab42-\
 2174d237a856"],
 
 Cell["\<\
@@ -2923,7 +2769,7 @@ Cell[BoxData[{
   3.7072296030326443`*^9}, {3.707229641942438*^9, 3.707229668507868*^9}, {
   3.707229702376491*^9, 3.707229705905842*^9}},
  CellLabel->
-  "In[408]:=",ExpressionUUID->"c207f144-e4a5-466f-b5be-4e22f09c128b"],
+  "In[103]:=",ExpressionUUID->"c207f144-e4a5-466f-b5be-4e22f09c128b"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
@@ -2945,7 +2791,7 @@ Cell[BoxData[
        Antialiasing->False]}}}},
   Epilog->{
     GrayLevel[1], 
-    DiskBox[{6.5, 7.5}, 0.2]},
+    DiskBox[{2.5, 4.5}, 0.2]},
   Frame->False,
   FrameLabel->{None, None},
   FrameTicks->{{None, None}, {None, None}},
@@ -2958,9 +2804,9 @@ Cell[BoxData[
    3.707229243981395*^9, 3.707229288768697*^9, 3.707229323885625*^9, 
    3.707229360772996*^9, 3.707229511007927*^9, 3.707229574579458*^9, {
    3.7072297033294888`*^9, 3.7072297157213173`*^9}, 3.707229757228653*^9, 
-   3.707229828854474*^9},
+   3.707229828854474*^9, {3.7072530666943007`*^9, 3.707253070972487*^9}},
  CellLabel->
-  "Out[409]=",ExpressionUUID->"25671b0d-674e-4e25-8183-027e90ab4e27"]
+  "Out[104]=",ExpressionUUID->"07480d0c-01e4-4c88-b872-3911a1b0e52a"]
 }, Open  ]],
 
 Cell["Now take one step:", "Direction",
@@ -2978,12 +2824,12 @@ Cell[BoxData[{
   3.707229135652994*^9, 3.7072291366850157`*^9}, {3.7072291943932323`*^9, 
   3.707229197192902*^9}, {3.7072292688924723`*^9, 3.707229282147174*^9}},
  CellLabel->
-  "In[410]:=",ExpressionUUID->"5cae7b31-8a19-4bf7-b397-0c4248cb7cd4"],
+  "In[105]:=",ExpressionUUID->"5cae7b31-8a19-4bf7-b397-0c4248cb7cd4"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGxV8sMfPH2hxXPLUUj9Q7qS2+cSKEzKHWPeQK04t
-e0fdT117B0v6obX5Q72codxfAPGWWCc=
+1:eJxTTMoPSmVmYGDggGIQGxV8sMfPH2hxXPLUUj9Q7hwo86llDr38NVjcSar7
+cYkPNncOtvRDa/OHejlDub8ABMhOrw==
     "], {{0, 0}, {8, 8}}, {0, 1}], {{
      {GrayLevel[
        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -3001,7 +2847,7 @@ e0fdT117B0v6obX5Q72codxfAPGWWCc=
        Antialiasing->False]}}}},
   Epilog->{
     GrayLevel[1], 
-    DiskBox[{2.5, 5.5}, 0.2]},
+    DiskBox[{4.5, 3.5}, 0.2]},
   Frame->False,
   FrameLabel->{None, None},
   FrameTicks->{{None, None}, {None, None}},
@@ -3013,9 +2859,10 @@ e0fdT117B0v6obX5Q72codxfAPGWWCc=
  CellChangeTimes->{{3.7072292456964903`*^9, 3.7072292888828077`*^9}, {
    3.707229323938159*^9, 3.707229363298839*^9}, 3.7072295110782537`*^9, {
    3.7072295631044073`*^9, 3.707229578093493*^9}, {3.707229709526608*^9, 
-   3.7072297196758204`*^9}, 3.7072297608349447`*^9, 3.707229830857387*^9},
+   3.7072297196758204`*^9}, 3.7072297608349447`*^9, 3.707229830857387*^9, {
+   3.707253069448658*^9, 3.7072530739265633`*^9}},
  CellLabel->
-  "Out[411]=",ExpressionUUID->"f90d595c-4c5a-4269-88ea-54cc3890c06c"]
+  "Out[106]=",ExpressionUUID->"d033eccd-b942-43dd-acf4-7ead48e09bf7"]
 }, Open  ]],
 
 Cell["\<\
@@ -3044,12 +2891,12 @@ external parameters, thus the system demonstrated self-organized criticality.\
 e9a1e86215c9"],
 
 Cell["\<\
-A subcritical sandpile, adding a grain of sand will only cause a small change \
-in landscape:\
+Here is a subcritical sandpile, adding a grain of sand will only cause a \
+small change in landscape:\
 \>", "Direction",
  CellChangeTimes->{{3.707228744984617*^9, 3.7072288064221983`*^9}, {
-  3.707229539189288*^9, 
-  3.707229541124956*^9}},ExpressionUUID->"7fb2878f-4a4b-436e-9f33-\
+  3.707229539189288*^9, 3.707229541124956*^9}, {3.707253505979784*^9, 
+  3.707253507965672*^9}},ExpressionUUID->"7fb2878f-4a4b-436e-9f33-\
 70782c11a0bb"],
 
 Cell[CellGroupData[{
@@ -3072,12 +2919,12 @@ Cell[BoxData[{
  CellChangeTimes->{{3.707228676890163*^9, 3.7072287769664717`*^9}, {
   3.707229729109397*^9, 3.707229739963366*^9}},
  CellLabel->
-  "In[412]:=",ExpressionUUID->"3179f701-72ca-4793-a5fa-6f60d07b879a"],
+  "In[107]:=",ExpressionUUID->"3179f701-72ca-4793-a5fa-6f60d07b879a"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGxV8sMcQwiuPSz21xGltD63tHajwpJZ5QyV+B8o9
-Qz1+qSU+2MKTWvbS2j0DFX8IeQAXmE2A
+1:eJxTTMoPSmVmYGDggGIQGxV8sMcQwitOrj5aiZPqTmqpp1b4DDb3kCpO63Cg
+ln+HenoebPFLa/cMlXxN63RLLXsR8gDoMU2A
     "], {{0, 0}, {8, 8}}, {0, 1}], {{
      {GrayLevel[
        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -3095,7 +2942,7 @@ Qz1+qSU+2MKTWvbS2j0DFX8IeQAXmE2A
        Antialiasing->False]}}}},
   Epilog->{
     GrayLevel[1], 
-    DiskBox[{2.5, 5.5}, 0.2]},
+    DiskBox[{4.5, 3.5}, 0.2]},
   Frame->False,
   FrameLabel->{None, None},
   FrameTicks->{{None, None}, {None, None}},
@@ -3104,20 +2951,22 @@ Qz1+qSU+2MKTWvbS2j0DFX8IeQAXmE2A
   Method->{
    "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
     Automatic}]], "Output",
- CellChangeTimes->{3.707228838215372*^9, 3.707229245777959*^9, 
-  3.707229288934311*^9, 3.7072293239849567`*^9, 3.707229363370735*^9, 
-  3.707229511135392*^9, 3.707229751937414*^9, 3.7072298309341784`*^9},
+ CellChangeTimes->{
+  3.707228838215372*^9, 3.707229245777959*^9, 3.707229288934311*^9, 
+   3.7072293239849567`*^9, 3.707229363370735*^9, 3.707229511135392*^9, 
+   3.707229751937414*^9, 3.7072298309341784`*^9, {3.707253069558125*^9, 
+   3.7072530740000067`*^9}},
  CellLabel->
-  "Out[413]=",ExpressionUUID->"62c34b06-f677-4fd7-8b9a-4dee6b888098"]
+  "Out[108]=",ExpressionUUID->"cf366672-35ac-43c7-a7b4-001821264e61"]
 }, Open  ]],
 
 Cell["\<\
-A supercritical sandpile, adding a grain of sand will change the entire \
-landscape:\
+Here is a supercritical sandpile, adding a grain of sand will change the \
+entire landscape:\
 \>", "Direction",
  CellChangeTimes->{{3.707228744984617*^9, 3.707228781239582*^9}, {
-  3.707228812057563*^9, 
-  3.707228826757616*^9}},ExpressionUUID->"33027123-4a9a-4f60-a46b-\
+  3.707228812057563*^9, 3.707228826757616*^9}, {3.7072535123454514`*^9, 
+  3.707253514450419*^9}},ExpressionUUID->"33027123-4a9a-4f60-a46b-\
 ffef566924be"],
 
 Cell[CellGroupData[{
@@ -3139,12 +2988,12 @@ Cell[BoxData[{
  InitializationCell->True,
  CellChangeTimes->{{3.707229745267376*^9, 3.707229748769163*^9}},
  CellLabel->
-  "In[414]:=",ExpressionUUID->"604fa0c4-2c9b-4bc0-8c61-533c5aea0f63"],
+  "In[109]:=",ExpressionUUID->"604fa0c4-2c9b-4bc0-8c61-533c5aea0f63"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGDggGIQGwI+2KPSg0UcHZArTmvzaS0+UOFDqr0DFb+kuoda
-5oy0dD5Q6WSwhedgi0fyww0AOQBxAg==
+1:eJxTTMoPSmVmYGDggGIQGwI+2KPStBJHB9QWp5a9AxUOgy38B5u91HIntcwZ
+qHCmlvm0dudQCR9S7aWWOQNVniAAAD0seBw=
     "], {{0, 0}, {8, 8}}, {0, 1}], {{
      {GrayLevel[
        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -3162,7 +3011,7 @@ Cell[BoxData[
        Antialiasing->False]}}}},
   Epilog->{
     GrayLevel[1], 
-    DiskBox[{2.5, 5.5}, 0.2]},
+    DiskBox[{4.5, 3.5}, 0.2]},
   Frame->False,
   FrameLabel->{None, None},
   FrameTicks->{{None, None}, {None, None}},
@@ -3174,9 +3023,10 @@ Cell[BoxData[
  CellChangeTimes->{{3.707228728892084*^9, 3.707228735466208*^9}, 
    3.7072288423807163`*^9, 3.707229245847928*^9, 3.707229288970069*^9, 
    3.7072293241009083`*^9, 3.707229363594441*^9, 3.7072295111728067`*^9, 
-   3.7072297495554647`*^9, 3.707229830976301*^9},
+   3.7072297495554647`*^9, 3.707229830976301*^9, {3.707253069600422*^9, 
+   3.707253074043399*^9}},
  CellLabel->
-  "Out[415]=",ExpressionUUID->"0ae5021a-6253-48a1-8fc5-da284d6f7e30"]
+  "Out[110]=",ExpressionUUID->"4d9fcb62-cb98-4797-99ad-10e0af80f8ea"]
 }, Open  ]]
 }, Open  ]],
 
@@ -3247,7 +3097,7 @@ Cell["leomcelroy@gmail.com", "Authorship",
 }, Open  ]]
 },
 WindowSize->{1127, 911},
-WindowMargins->{{133, Automatic}, {Automatic, 0}},
+WindowMargins->{{103, Automatic}, {Automatic, 0}},
 CellLabelAutoDelete->False,
 FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
 2017)",
@@ -3319,276 +3169,276 @@ Cell[825, 28, 476, 9, 55, "Abstract", "ExpressionUUID" -> \
 Cell[CellGroupData[{
 Cell[1326, 41, 260, 4, 62, "Section", "ExpressionUUID" -> \
 "601ecc6d-829b-49bf-b3f8-b71c3d8dff03"],
-Cell[1589, 47, 337, 5, 30, "Text", "ExpressionUUID" -> \
+Cell[1589, 47, 541, 9, 30, "Text", "ExpressionUUID" -> \
 "9c9831d7-4344-49d0-971c-8b79594be7ef"],
-Cell[1929, 54, 378, 6, 31, "Direction", "ExpressionUUID" -> \
+Cell[2133, 58, 378, 6, 31, "Direction", "ExpressionUUID" -> \
 "ce23dc15-1a79-4b3a-b2f0-cf57149c507a"],
-Cell[2310, 62, 167, 4, 48, "Input", "ExpressionUUID" -> \
+Cell[2514, 66, 163, 3, 48, "Input", "ExpressionUUID" -> \
 "2ccbcc0f-2983-4b0d-a9fc-66160ac1c82a",
  InitializationCell->True],
-Cell[2480, 68, 413, 7, 31, "Direction", "ExpressionUUID" -> \
+Cell[2680, 71, 413, 7, 31, "Direction", "ExpressionUUID" -> \
 "94bec468-5087-4807-b2e0-60688b492b45"],
 Cell[CellGroupData[{
-Cell[2918, 79, 855, 20, 70, "Input", "ExpressionUUID" -> \
+Cell[3118, 82, 851, 19, 70, "Input", "ExpressionUUID" -> \
 "564ff60d-2ca5-4d56-8988-5ccb2353b3c1",
  InitializationCell->True],
-Cell[3776, 101, 2002, 40, 374, "Output", "ExpressionUUID" -> \
-"207d2f11-107e-452d-9752-a3a9021114c6"]
+Cell[3972, 103, 2043, 39, 374, "Output", "ExpressionUUID" -> \
+"d431ec43-fab3-44c3-b78f-7df7f7b1e3cc"]
 }, Open  ]],
-Cell[5793, 144, 316, 7, 30, "Text", "ExpressionUUID" -> \
+Cell[6030, 145, 316, 7, 30, "Text", "ExpressionUUID" -> \
 "04c776ac-58d6-4522-8efc-cd5e9938473e"],
-Cell[6112, 153, 506, 10, 31, "Direction", "ExpressionUUID" -> \
+Cell[6349, 154, 506, 10, 31, "Direction", "ExpressionUUID" -> \
 "6078d336-2492-4e68-aa05-c2f172bbd438"],
 Cell[CellGroupData[{
-Cell[6643, 167, 593, 13, 48, "Input", "ExpressionUUID" -> \
+Cell[6880, 168, 589, 12, 48, "Input", "ExpressionUUID" -> \
 "e1fad0c0-fedc-43d8-9111-879cf1cf6386",
  InitializationCell->True],
-Cell[7239, 182, 7113, 180, 32, "Output", "ExpressionUUID" -> \
-"8d00eadf-ae72-4cfa-a589-299ed5751600"]
+Cell[7472, 182, 7159, 180, 32, "Output", "ExpressionUUID" -> \
+"a3de1016-ec23-410e-984b-744e4a886136"]
 }, Open  ]],
-Cell[14367, 365, 493, 7, 31, "Direction", "ExpressionUUID" -> \
+Cell[14646, 365, 561, 9, 31, "Direction", "ExpressionUUID" -> \
 "9538ad31-9137-4471-a2bb-6d12351af01c"],
 Cell[CellGroupData[{
-Cell[14885, 376, 798, 21, 70, "Input", "ExpressionUUID" -> \
+Cell[15232, 378, 794, 20, 70, "Input", "ExpressionUUID" -> \
 "ad176137-5d51-4cdf-be5a-4dfe5cd8b2cf",
  InitializationCell->True],
-Cell[15686, 399, 1762, 38, 374, "Output", "ExpressionUUID" -> \
-"17a58e0d-e12b-4e37-bf7e-7a502e38efdc"]
+Cell[16029, 400, 1818, 38, 374, "Output", "ExpressionUUID" -> \
+"8d3c6092-73b6-413f-9994-463cb5236309"]
 }, Open  ]],
-Cell[17463, 440, 405, 8, 49, "Text", "ExpressionUUID" -> \
+Cell[17862, 441, 405, 8, 49, "Text", "ExpressionUUID" -> \
 "6f41c136-1d08-453e-b0c5-50156b3fb753"],
-Cell[17871, 450, 372, 7, 31, "Direction", "ExpressionUUID" -> \
+Cell[18270, 451, 372, 7, 31, "Direction", "ExpressionUUID" -> \
 "b3f6a33e-86a4-4960-8b62-98c6c02d6052"],
 Cell[CellGroupData[{
-Cell[18268, 461, 1235, 34, 112, "Input", "ExpressionUUID" -> \
+Cell[18667, 462, 1231, 33, 112, "Input", "ExpressionUUID" -> \
 "8654a732-261c-406f-9d3a-f918919d9ffe",
  InitializationCell->True],
-Cell[19506, 497, 868, 15, 32, "Output", "ExpressionUUID" -> \
-"5f4d120a-307e-43cc-bf09-a7a83aaa1b17"],
-Cell[20377, 514, 1972, 43, 374, "Output", "ExpressionUUID" -> \
-"7ec42230-15a5-4bf0-b275-1cff25dcfed7"]
+Cell[19901, 497, 916, 15, 32, "Output", "ExpressionUUID" -> \
+"0f679b93-66b3-4f3f-8fba-2a276b88710c"],
+Cell[20820, 514, 2024, 43, 374, "Output", "ExpressionUUID" -> \
+"4443fa23-5f1f-469e-9cdb-64f1a1797682"]
 }, Open  ]],
-Cell[22364, 560, 460, 9, 31, "Direction", "ExpressionUUID" -> \
+Cell[22859, 560, 509, 10, 31, "Direction", "ExpressionUUID" -> \
 "dc2b8755-0191-4b45-8338-979fdfccba7f"],
 Cell[CellGroupData[{
-Cell[22849, 573, 1048, 30, 91, "Input", "ExpressionUUID" -> \
+Cell[23393, 574, 1044, 29, 91, "Input", "ExpressionUUID" -> \
 "6c4df0ad-407d-4ddd-92c4-ee7f16d6eb60",
  InitializationCell->True],
-Cell[23900, 605, 1825, 41, 374, "Output", "ExpressionUUID" -> \
-"85768286-9180-4f59-bae1-949700a02190"]
+Cell[24440, 605, 1889, 41, 374, "Output", "ExpressionUUID" -> \
+"8654bfdf-a847-46a1-8ec2-fefa19e3215f"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25774, 652, 266, 4, 62, "Section", "ExpressionUUID" -> \
+Cell[26378, 652, 266, 4, 62, "Section", "ExpressionUUID" -> \
 "369d899b-de3c-49b0-b7eb-519cb686ffeb"],
-Cell[26043, 658, 383, 8, 30, "Text", "ExpressionUUID" -> \
+Cell[26647, 658, 383, 8, 30, "Text", "ExpressionUUID" -> \
 "9762a70d-47b6-4138-907e-abf6013157a9"],
-Cell[26429, 668, 187, 3, 31, "Direction", "ExpressionUUID" -> \
+Cell[27033, 668, 187, 3, 31, "Direction", "ExpressionUUID" -> \
 "589404f5-64fd-4b3b-9707-c45f082fa5b1"],
 Cell[CellGroupData[{
-Cell[26641, 675, 2323, 63, 133, "Input", "ExpressionUUID" -> \
+Cell[27245, 675, 2319, 62, 133, "Input", "ExpressionUUID" -> \
 "13c5811d-c643-43d7-a0e2-b79261f2e9a8",
  InitializationCell->True],
-Cell[28967, 740, 2310, 48, 374, "Output", "ExpressionUUID" -> \
-"45a144f4-e4d7-4d5f-b038-25041f1b853c"]
+Cell[29567, 739, 2350, 47, 374, "Output", "ExpressionUUID" -> \
+"3b89fd0f-fc94-4044-9b85-cfe45c0f55ca"]
 }, Open  ]],
-Cell[31292, 791, 448, 6, 31, "Direction", "ExpressionUUID" -> \
+Cell[31932, 789, 448, 6, 31, "Direction", "ExpressionUUID" -> \
 "3bf2ae50-589d-4dfb-98e6-71bbb3f3496d"],
 Cell[CellGroupData[{
-Cell[31765, 801, 1283, 33, 91, "Input", "ExpressionUUID" -> \
+Cell[32405, 799, 1279, 32, 91, "Input", "ExpressionUUID" -> \
 "bd847728-192a-4731-b840-d11d4c8f6a82",
  InitializationCell->True],
-Cell[33051, 836, 1907, 42, 374, "Output", "ExpressionUUID" -> \
-"a4711048-7389-46da-ba0c-2ffbba2c1033"]
+Cell[33687, 833, 1949, 41, 374, "Output", "ExpressionUUID" -> \
+"e1f9ef48-2b7f-4758-917e-0864fd0d0eb3"]
 }, Open  ]],
-Cell[34973, 881, 570, 10, 31, "Direction", "ExpressionUUID" -> \
+Cell[35651, 877, 570, 10, 31, "Direction", "ExpressionUUID" -> \
 "49358a6d-6654-4fa3-8f1f-1fdc3a40e1e6"],
 Cell[CellGroupData[{
-Cell[35568, 895, 2324, 67, 133, "Input", "ExpressionUUID" -> \
+Cell[36246, 891, 2320, 66, 133, "Input", "ExpressionUUID" -> \
 "b580f0d5-2a34-4267-bb3e-6bb4e11c407d",
  InitializationCell->True],
-Cell[37895, 964, 2203, 45, 374, "Output", "ExpressionUUID" -> \
-"61a933a0-b4ea-468f-9fe8-aee20eb63301"]
+Cell[38569, 959, 2257, 45, 374, "Output", "ExpressionUUID" -> \
+"cc1e3062-4a5f-41bd-8c4f-418f0f392c99"]
 }, Open  ]],
-Cell[40113, 1012, 523, 9, 30, "Text", "ExpressionUUID" -> \
+Cell[40841, 1007, 523, 9, 30, "Text", "ExpressionUUID" -> \
 "66f0539f-5b8f-4be2-b3a9-8c5147a502e8"],
-Cell[40639, 1023, 580, 8, 31, "Direction", "ExpressionUUID" -> \
+Cell[41367, 1018, 580, 8, 31, "Direction", "ExpressionUUID" -> \
 "57d5366c-2f91-4112-a78a-eb8f93b84cdd"],
-Cell[41222, 1033, 3767, 98, 301, "Input", "ExpressionUUID" -> \
+Cell[41950, 1028, 3763, 97, 301, "Input", "ExpressionUUID" -> \
 "ebebe772-4434-4baa-ab62-d767003f91a0",
  InitializationCell->True],
-Cell[44992, 1133, 642, 11, 31, "Direction", "ExpressionUUID" -> \
+Cell[45716, 1127, 642, 11, 31, "Direction", "ExpressionUUID" -> \
 "a412849e-c081-4540-b76a-8c533bdcbbd1"],
 Cell[CellGroupData[{
-Cell[45659, 1148, 806, 20, 70, "Input", "ExpressionUUID" -> \
+Cell[46383, 1142, 802, 19, 70, "Input", "ExpressionUUID" -> \
 "2d447556-fc2e-4670-ad72-dcbaac67ff6c",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[46490, 1172, 1690, 38, 367, "Print", "ExpressionUUID" -> \
-"9c72b55c-b023-4ecc-9f51-55b40cfd28b2"],
-Cell[48183, 1212, 1725, 39, 367, "Print", "ExpressionUUID" -> \
-"c97d1d79-0f51-4497-a11f-b8e2bfa6c816"]
+Cell[47210, 1165, 1752, 40, 367, "Print", "ExpressionUUID" -> \
+"9755e6db-fb26-45b7-9479-ac4979a5a75f"],
+Cell[48965, 1207, 1776, 40, 367, "Print", "ExpressionUUID" -> \
+"1cdfe2ab-e2d8-49fd-aff6-c2354f07e5f6"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[49969, 1258, 306, 5, 62, "Section", "ExpressionUUID" -> \
+Cell[50802, 1254, 306, 5, 62, "Section", "ExpressionUUID" -> \
 "e0bbb09e-7f08-49ff-a9c8-cacd3fb3f34b"],
-Cell[50278, 1265, 713, 12, 30, "Text", "ExpressionUUID" -> \
+Cell[51111, 1261, 713, 12, 30, "Text", "ExpressionUUID" -> \
 "bf5fbfd7-5432-4d8c-9422-36be18c77b17"],
-Cell[50994, 1279, 653, 9, 31, "Direction", "ExpressionUUID" -> \
+Cell[51827, 1275, 653, 9, 31, "Direction", "ExpressionUUID" -> \
 "89d1ca40-0109-416c-947b-ce90ec831299"],
-Cell[51650, 1290, 1533, 37, 217, "Input", "ExpressionUUID" -> \
+Cell[52483, 1286, 1529, 36, 217, "Input", "ExpressionUUID" -> \
 "3fe5c8d8-86a9-474c-9101-ca5d412ac9ce",
  InitializationCell->True],
-Cell[53186, 1329, 738, 11, 31, "Direction", "ExpressionUUID" -> \
+Cell[54015, 1324, 738, 11, 31, "Direction", "ExpressionUUID" -> \
 "9571de69-fc1f-4f3f-8b03-88d74d61f141"],
 Cell[CellGroupData[{
-Cell[53949, 1344, 2123, 48, 175, "Input", "ExpressionUUID" -> \
+Cell[54778, 1339, 2167, 47, 175, "Input", "ExpressionUUID" -> \
 "154426e8-a56b-4fc1-b537-12c3647f7943",
  InitializationCell->True],
-Cell[56075, 1394, 38044, 823, 451, "Output", "ExpressionUUID" -> \
-"3ba106e9-1530-49ab-9a19-61241e3f00cf"]
+Cell[56948, 1388, 30487, 664, 451, "Output", "ExpressionUUID" -> \
+"a96e0985-80d5-424d-b19b-9b276e978c60"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[94168, 2223, 432, 6, 62, "Section", "ExpressionUUID" -> \
+Cell[87484, 2058, 432, 6, 62, "Section", "ExpressionUUID" -> \
 "fcd0dcee-9825-4599-9dd2-a15d2c5e9877"],
-Cell[94603, 2231, 834, 14, 49, "Text", "ExpressionUUID" -> \
+Cell[87919, 2066, 834, 14, 49, "Text", "ExpressionUUID" -> \
 "16102c31-5aa8-4437-aa29-21da783800a9"],
-Cell[95440, 2247, 621, 11, 31, "Direction", "ExpressionUUID" -> \
+Cell[88756, 2082, 668, 12, 31, "Direction", "ExpressionUUID" -> \
 "3adf6ca5-9f14-4a81-bda1-dc6a9fa0b03c"],
 Cell[CellGroupData[{
-Cell[96086, 2262, 597, 13, 70, "Input", "ExpressionUUID" -> \
+Cell[89449, 2098, 593, 12, 70, "Input", "ExpressionUUID" -> \
 "b8af9c4b-37f3-4683-ae21-619f779a4781",
  InitializationCell->True],
-Cell[96686, 2277, 2998, 73, 240, "Output", "ExpressionUUID" -> \
-"648cf355-dd7c-457d-850b-7a40d17afc07"]
+Cell[90045, 2112, 3012, 71, 240, "Output", "ExpressionUUID" -> \
+"0ce746bb-e8d2-4f73-b9ba-3a942cc786e4"]
 }, Open  ]],
-Cell[99699, 2353, 696, 11, 31, "Direction", "ExpressionUUID" -> \
+Cell[93072, 2186, 696, 11, 31, "Direction", "ExpressionUUID" -> \
 "a2be7386-a3d2-442e-97ef-e139641fa2fc"],
 Cell[CellGroupData[{
-Cell[100420, 2368, 734, 16, 70, "Input", "ExpressionUUID" -> \
+Cell[93793, 2201, 730, 15, 70, "Input", "ExpressionUUID" -> \
 "6e9b2bf8-7aae-415e-bf22-c7797bfb85b8",
  InitializationCell->True],
-Cell[101157, 2386, 1952, 48, 228, "Output", "ExpressionUUID" -> \
-"4f165a55-a0f3-4ed9-a45c-0046f4ce8fea"]
+Cell[94526, 2218, 1988, 48, 228, "Output", "ExpressionUUID" -> \
+"5519db0e-a39e-4778-b174-dc91fd6ac54c"]
 }, Open  ]],
-Cell[103124, 2437, 657, 12, 31, "Direction", "ExpressionUUID" -> \
+Cell[96529, 2269, 657, 12, 31, "Direction", "ExpressionUUID" -> \
 "572694f4-e6a3-42fa-ba40-70403af5f6ef"],
 Cell[CellGroupData[{
-Cell[103806, 2453, 1303, 34, 91, "Input", "ExpressionUUID" -> \
+Cell[97211, 2285, 1299, 33, 91, "Input", "ExpressionUUID" -> \
 "8fcc9e0d-3aab-4d2b-91a3-855fe605fd5f",
  InitializationCell->True],
-Cell[105112, 2489, 2078, 50, 169, "Output", "ExpressionUUID" -> \
-"08064d46-eec4-4e4c-b74f-7725073c08fd"]
+Cell[98513, 2320, 2110, 50, 184, "Output", "ExpressionUUID" -> \
+"bfb65f9b-09e9-4b52-afd2-40b431284fe4"]
 }, Open  ]],
-Cell[107205, 2542, 763, 11, 31, "Direction", "ExpressionUUID" -> \
+Cell[100638, 2373, 763, 11, 31, "Direction", "ExpressionUUID" -> \
 "99315488-a569-4076-8acb-b20a769ed4ee"],
 Cell[CellGroupData[{
-Cell[107993, 2557, 400, 10, 48, "Input", "ExpressionUUID" -> \
+Cell[101426, 2388, 396, 9, 48, "Input", "ExpressionUUID" -> \
 "b6daabc2-0ad9-457d-8775-f375877516dd",
  InitializationCell->True],
-Cell[108396, 2569, 679, 11, 32, "Output", "ExpressionUUID" -> \
-"c7b0ae4b-815e-4451-af68-b84cbc1a3e62"]
+Cell[101825, 2399, 824, 13, 32, "Output", "ExpressionUUID" -> \
+"88463ede-74d7-4d5c-bcf8-7f8a76ca7a25"]
 }, Open  ]],
-Cell[109090, 2583, 949, 15, 31, "Direction", "ExpressionUUID" -> \
+Cell[102664, 2415, 949, 15, 31, "Direction", "ExpressionUUID" -> \
 "199204b9-fb26-42ca-bb2d-a0c6116cad96"],
 Cell[CellGroupData[{
-Cell[110064, 2602, 415, 12, 70, "Input", "ExpressionUUID" -> \
+Cell[103638, 2434, 415, 12, 70, "Input", "ExpressionUUID" -> \
 "a4bbf7c0-b08b-49c5-ad67-17fbddbbc8e3",
  InitializationCell->True],
-Cell[110482, 2616, 3199, 71, 169, "Output", "ExpressionUUID" -> \
-"3e7c053f-72f5-4108-95c3-18c22ded9f41"]
+Cell[104056, 2448, 4020, 84, 184, "Output", "ExpressionUUID" -> \
+"0639b8a2-9189-4387-af65-fcdad91e1ea2"]
 }, Open  ]],
-Cell[113696, 2690, 1068, 17, 49, "Text", "ExpressionUUID" -> \
+Cell[108091, 2535, 1068, 17, 49, "Text", "ExpressionUUID" -> \
 "d98768ec-9a0a-4aa9-adae-f929f221905c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[114801, 2712, 398, 6, 62, "Section", "ExpressionUUID" -> \
+Cell[109196, 2557, 398, 6, 62, "Section", "ExpressionUUID" -> \
 "d6a8d954-221a-488c-a67b-61c087184dc9"],
-Cell[115202, 2720, 1383, 21, 49, "Text", "ExpressionUUID" -> \
+Cell[109597, 2565, 1383, 21, 49, "Text", "ExpressionUUID" -> \
 "c1fef8c8-4314-46df-a919-80ff86a3ee17"],
-Cell[116588, 2743, 1000, 15, 31, "Direction", "ExpressionUUID" -> \
+Cell[110983, 2588, 1000, 15, 31, "Direction", "ExpressionUUID" -> \
 "b7925070-4f88-4874-b9d1-ed1080543408"],
 Cell[CellGroupData[{
-Cell[117613, 2762, 574, 12, 48, "Input", "ExpressionUUID" -> \
+Cell[112008, 2607, 574, 12, 48, "Input", "ExpressionUUID" -> \
 "9045787e-42fd-4bbf-9478-2778eb67d089",
  InitializationCell->True],
-Cell[118190, 2776, 1578, 41, 245, "Output", "ExpressionUUID" -> \
-"c2ba966b-3f36-4256-9496-bf87e525da28"]
+Cell[112585, 2621, 1657, 42, 244, "Output", "ExpressionUUID" -> \
+"c6a7c628-83f2-4bee-a365-f9a2fafb240a"]
 }, Open  ]],
-Cell[119783, 2820, 1306, 20, 30, "Text", "ExpressionUUID" -> \
+Cell[114257, 2666, 1306, 20, 30, "Text", "ExpressionUUID" -> \
 "eeb4c2a0-5142-4cfe-8708-6c604c56a789"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[121126, 2845, 415, 6, 62, "Section", "ExpressionUUID" -> \
+Cell[115600, 2691, 415, 6, 62, "Section", "ExpressionUUID" -> \
 "7f748ea2-f554-4221-a4eb-0c6956e3f98d"],
-Cell[121544, 2853, 1160, 18, 68, "Text", "ExpressionUUID" -> \
+Cell[116018, 2699, 1160, 18, 68, "Text", "ExpressionUUID" -> \
 "e27fd655-a940-4e47-8164-c5571aae211e"],
-Cell[122707, 2873, 349, 7, 31, "Direction", "ExpressionUUID" -> \
+Cell[117181, 2719, 374, 7, 31, "Direction", "ExpressionUUID" -> \
 "1b83bbc0-cc92-4db3-ab42-2174d237a856"],
-Cell[123059, 2882, 940, 15, 49, "Text", "ExpressionUUID" -> \
+Cell[117558, 2728, 940, 15, 49, "Text", "ExpressionUUID" -> \
 "8a1c1785-58e8-4c08-882b-e5fd679b83bd"],
-Cell[124002, 2899, 320, 6, 31, "Direction", "ExpressionUUID" -> \
+Cell[118501, 2745, 320, 6, 31, "Direction", "ExpressionUUID" -> \
 "cb7eb04a-4d62-41ee-a732-b53561c6aff7"],
 Cell[CellGroupData[{
-Cell[124347, 2909, 711, 16, 70, "Input", "ExpressionUUID" -> \
+Cell[118846, 2755, 711, 16, 70, "Input", "ExpressionUUID" -> \
 "c207f144-e4a5-466f-b5be-4e22f09c128b",
  InitializationCell->True],
-Cell[125061, 2927, 1490, 35, 374, "Output", "ExpressionUUID" -> \
-"25671b0d-674e-4e25-8183-027e90ab4e27"]
+Cell[119560, 2773, 1538, 35, 374, "Output", "ExpressionUUID" -> \
+"07480d0c-01e4-4c88-b872-3911a1b0e52a"]
 }, Open  ]],
-Cell[126566, 2965, 262, 4, 31, "Direction", "ExpressionUUID" -> \
+Cell[121113, 2811, 262, 4, 31, "Direction", "ExpressionUUID" -> \
 "1e5debb1-a827-4b10-9792-99b73a3033cf"],
 Cell[CellGroupData[{
-Cell[126853, 2973, 418, 7, 70, "Input", "ExpressionUUID" -> \
+Cell[121400, 2819, 418, 7, 70, "Input", "ExpressionUUID" -> \
 "5cae7b31-8a19-4bf7-b397-0c4248cb7cd4",
  InitializationCell->True],
-Cell[127274, 2982, 1511, 35, 374, "Output", "ExpressionUUID" -> \
-"f90d595c-4c5a-4269-88ea-54cc3890c06c"]
+Cell[121821, 2828, 1563, 36, 374, "Output", "ExpressionUUID" -> \
+"d033eccd-b942-43dd-acf4-7ead48e09bf7"]
 }, Open  ]],
-Cell[128800, 3020, 1587, 23, 106, "Text", "ExpressionUUID" -> \
+Cell[123399, 2867, 1587, 23, 106, "Text", "ExpressionUUID" -> \
 "e6200141-8162-4d6c-bf38-e9a1e86215c9"],
-Cell[130390, 3045, 299, 7, 31, "Direction", "ExpressionUUID" -> \
+Cell[124989, 2892, 353, 7, 31, "Direction", "ExpressionUUID" -> \
 "7fb2878f-4a4b-436e-9f33-70782c11a0bb"],
 Cell[CellGroupData[{
-Cell[130714, 3056, 689, 18, 70, "Input", "ExpressionUUID" -> \
+Cell[125367, 2903, 689, 18, 70, "Input", "ExpressionUUID" -> \
 "3179f701-72ca-4793-a5fa-6f60d07b879a",
  InitializationCell->True],
-Cell[131406, 3076, 1423, 34, 374, "Output", "ExpressionUUID" -> \
-"62c34b06-f677-4fd7-8b9a-4dee6b888098"]
+Cell[126059, 2923, 1484, 36, 374, "Output", "ExpressionUUID" -> \
+"cf366672-35ac-43c7-a7b4-001821264e61"]
 }, Open  ]],
-Cell[132844, 3113, 288, 7, 31, "Direction", "ExpressionUUID" -> \
+Cell[127558, 2962, 344, 7, 31, "Direction", "ExpressionUUID" -> \
 "33027123-4a9a-4f60-a46b-ffef566924be"],
 Cell[CellGroupData[{
-Cell[133157, 3124, 628, 17, 70, "Input", "ExpressionUUID" -> \
+Cell[127927, 2973, 628, 17, 70, "Input", "ExpressionUUID" -> \
 "604fa0c4-2c9b-4bc0-8c61-533c5aea0f63",
  InitializationCell->True],
-Cell[133788, 3143, 1479, 35, 374, "Output", "ExpressionUUID" -> \
-"0ae5021a-6253-48a1-8fc5-da284d6f7e30"]
+Cell[128558, 2992, 1533, 36, 374, "Output", "ExpressionUUID" -> \
+"4d9fcb62-cb98-4797-99ad-10e0af80f8ea"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[135316, 3184, 234, 4, 59, "FurtherExplorationSection", "ExpressionUUID" \
+Cell[130140, 3034, 234, 4, 59, "FurtherExplorationSection", "ExpressionUUID" \
 -> "b9532093-d59d-4bda-839f-ceb7c0b6d676"],
-Cell[135553, 3190, 376, 7, 26, "FurtherExploration", "ExpressionUUID" -> \
+Cell[130377, 3040, 376, 7, 26, "FurtherExploration", "ExpressionUUID" -> \
 "3dbe7f83-0e80-49c0-9428-f1dc4a681819"],
-Cell[135932, 3199, 328, 6, 26, "FurtherExploration", "ExpressionUUID" -> \
+Cell[130756, 3049, 328, 6, 26, "FurtherExploration", "ExpressionUUID" -> \
 "f9afc984-c5eb-4422-a91b-b5d447f8e05d"],
-Cell[136263, 3207, 264, 5, 26, "FurtherExploration", "ExpressionUUID" -> \
+Cell[131087, 3057, 264, 5, 26, "FurtherExploration", "ExpressionUUID" -> \
 "7cfad521-a059-4a62-abb5-4c5ae2ee387b"],
-Cell[136530, 3214, 252, 4, 26, "FurtherExploration", "ExpressionUUID" -> \
+Cell[131354, 3064, 252, 4, 26, "FurtherExploration", "ExpressionUUID" -> \
 "43b22134-d694-4bf4-b97f-eb6b83dc5a74"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[136819, 3223, 179, 3, 59, "AuthorshipSection", "ExpressionUUID" -> \
+Cell[131643, 3073, 179, 3, 59, "AuthorshipSection", "ExpressionUUID" -> \
 "3dea23e4-8ce7-4f0e-a74f-75530771ceb4"],
-Cell[137001, 3228, 259, 4, 24, "Authorship", "ExpressionUUID" -> \
+Cell[131825, 3078, 259, 4, 24, "Authorship", "ExpressionUUID" -> \
 "ef51fcfa-04d2-4784-8dbe-807cb03d6aee"],
-Cell[137263, 3234, 257, 4, 24, "Authorship", "ExpressionUUID" -> \
+Cell[132087, 3084, 257, 4, 24, "Authorship", "ExpressionUUID" -> \
 "092e4792-1266-4a76-8414-57286b1485fa"],
-Cell[137523, 3240, 264, 4, 24, "Authorship", "ExpressionUUID" -> \
+Cell[132347, 3090, 264, 4, 24, "Authorship", "ExpressionUUID" -> \
 "31b6b083-ffa9-44da-82f1-894e81f42335"]
 }, Open  ]]
 }, Open  ]]
