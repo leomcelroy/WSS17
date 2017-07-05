@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    386481,       6841]
-NotebookOptionsPosition[     68757,       1395]
-NotebookOutlinePosition[    381253,       6718]
-CellTagsIndexPosition[    381020,       6708]
+NotebookDataLength[    386609,       6842]
+NotebookOptionsPosition[     68885,       1396]
+NotebookOutlinePosition[    381381,       6719]
+CellTagsIndexPosition[    381148,       6709]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -30,8 +30,8 @@ Predicting Macro-Effects of Rule Variations in the Sandpile Model\
    3.708120399712119*^9, 3.708120401597063*^9}, {3.708161831143449*^9, 
    3.708161831404078*^9}, 3.7082112325974293`*^9, {3.708211789756488*^9, 
    3.70821184433541*^9}, 3.708211974850697*^9, {3.708212866561409*^9, 
-   3.708212870137423*^9}},ExpressionUUID->"6809cd51-783e-42eb-ad2f-\
-15ea0b2b2405"],
+   3.708212870137423*^9}},ExpressionUUID->"7392feb6-3d22-4e1b-8f57-\
+41502842c03e"],
 
 Cell[CellGroupData[{
 
@@ -478,11 +478,11 @@ of sandpiles from underlying rule matrices.\n"
 Cell[TextData[{
  Cell["SUMMARY OF WORK:", "TemplateInlineHeader",ExpressionUUID->
   "e825fb47-8012-4eb4-b8cb-f7e469e54519"],
- " \nI investigated all 255 Moore neighborhood rules, with critical height \
+ " \nI investigated all 255 Moore neighborhood rules, with critical heights \
 from one to eight and each grain of sand being uniquely distributed. All \
 rules were sand conserving. I looked at models with randomly added sand, and \
-with sand added only to center cell. The focus of my investigation was on \
-piles on a 301 x 301 table with 3000 grains of sand. \n"
+with sand added only to center cell. The focus of my investigation was piles \
+on a 301 x 301 table with 3000 grains of sand. \n"
 }], "TemplateText",
  CellChangeTimes->{{3.707836787772583*^9, 3.707836799763899*^9}, 
    3.708098577554308*^9, {3.708098758217001*^9, 3.7080987585846367`*^9}, {
@@ -493,8 +493,9 @@ piles on a 301 x 301 table with 3000 grains of sand. \n"
    3.708211909909193*^9}, {3.708213239563405*^9, 3.708213342543881*^9}, {
    3.708214264466948*^9, 3.708214265405147*^9}, 3.708214901396349*^9, {
    3.708250263381274*^9, 3.70825030795012*^9}, {3.7082523614331923`*^9, 
-   3.70825246545168*^9}},ExpressionUUID->"d45f558e-d2b9-4d3c-bc12-\
-06a184e69594"],
+   3.70825246545168*^9}, {3.7082564634840193`*^9, 
+   3.7082564986365023`*^9}},ExpressionUUID->"312823cf-6f49-41f5-94ee-\
+179375b4aabf"],
 
 Cell[TextData[{
  Cell["RESULTS AND FUTURE  WORK:", "TemplateInlineHeader",ExpressionUUID->
@@ -525,8 +526,8 @@ features of sandpiles in terms of rule matrices.\n"
    3.708211776877077*^9}, {3.70821185502633*^9, 3.708211871551035*^9}, {
    3.708212012003562*^9, 3.708212014217738*^9}, {3.7082148240086517`*^9, 
    3.708214876583*^9}, {3.708252491456802*^9, 
-   3.708252601638548*^9}},ExpressionUUID->"6798f7b4-c3dd-4d61-b57f-\
-311952cc52dd"]
+   3.708252601638548*^9}},ExpressionUUID->"43dffd15-6481-4dd2-959d-\
+71c1c288de61"]
 }, Open  ]]
 }, Open  ]],
 
@@ -674,8 +675,8 @@ page. ",
 }], "TemplateSectionDivider",
  CellChangeTimes->{3.708122505400732*^9, 3.708172026797749*^9, 
   3.708172089889476*^9, 3.708172374031658*^9, 3.708174120005659*^9, 
-  3.708174191876646*^9},ExpressionUUID->"e91fc35e-d657-4bea-9150-\
-a0bf98d918c2"],
+  3.708174191876646*^9},ExpressionUUID->"5b0753ff-f333-484b-9277-\
+9671aae7a153"],
 
 Cell[CellGroupData[{
 
@@ -1031,8 +1032,8 @@ $CellContext`o2]}], {Pattern[$CellContext`c,
    3.708123392747447*^9}, 3.7081234259775877`*^9, 3.708161609827849*^9, 
    3.7081616890687*^9, 3.708161765363204*^9, 3.708172073251072*^9, 
    3.708172448694848*^9, 
-   3.708174173279682*^9},ExpressionUUID->"077115e3-99e5-41df-8823-\
-56072ab30efe"],
+   3.708174173279682*^9},ExpressionUUID->"8f73e1cb-dfab-4942-87a7-\
+8c9e56795021"],
 
 Cell[CellGroupData[{
 
@@ -1047,8 +1048,8 @@ Cell["Summary in Detail", "TemplateSubsection",
  CellChangeTimes->{{3.549542055118816*^9, 3.5495420583168*^9}, {
   3.708095979852994*^9, 3.708095983809194*^9}, {3.70809609386517*^9, 
   3.708096094077529*^9}, {3.7082137274405727`*^9, 
-  3.708213729051444*^9}},ExpressionUUID->"7b9faef1-24d5-4142-9575-\
-b206e6897439"],
+  3.708213729051444*^9}},ExpressionUUID->"e6397930-33f1-4ef5-8362-\
+90ff011e87ce"],
 
 Cell[CellGroupData[{
 
@@ -1058,10 +1059,10 @@ Cell["Goal", "Subsubsection",
 5736ee3c77ec"],
 
 Cell["\<\
-My project was a simple investigation of the micro-macro link. In other words \
-my aim was to predict emergent behavior, macro-features of sandpiles, from \
-local rules, sand redistribution rules at critical heights. I studied all \
-variations of the Bak-Tang-Wiesenfeld sandpile model which are sand \
+My project was a simple investigation of the micro-macro link. In other \
+words, my aim was to predict emergent behavior, macro-features of sandpiles, \
+from local rules, sand redistribution rules at critical heights. I studied \
+all variations of the Bak-Tang-Wiesenfeld sandpile model which are sand \
 conserving and where each grain from avalanches is uniquely distributed, this \
 includes critical heights from one to eight. This project was focussed on \
 studying simple programs for the model rather than physical implications of \
@@ -1071,9 +1072,9 @@ the model.\
   3.708213795418099*^9, {3.708215436622566*^9, 3.708215439957871*^9}, 
    3.7082212215228863`*^9, 3.708221416974947*^9, 3.708250334941145*^9, {
    3.7082504977683573`*^9, 3.7082504987331247`*^9}, {3.708250557858206*^9, 
-   3.708250630442689*^9}, {3.708252653237967*^9, 
-   3.708252664953718*^9}},ExpressionUUID->"02a6f635-02a7-479b-9ad0-\
-ae1ce9cefca7"]
+   3.708250630442689*^9}, {3.708252653237967*^9, 3.708252664953718*^9}, 
+   3.708256825371526*^9},ExpressionUUID->"83b19a70-da27-4d95-9087-\
+b33ddf3b6c17"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1085,7 +1086,7 @@ Cell["Process", "Subsubsection",
 58a3e2113a35"],
 
 Cell["\<\
-The sandpile model consists of a two dimensional array with cell values that \
+The sandpile model consists of a two-dimensional array with cell values that \
 range from zero to the critical height. When the value of a cell exceeds the \
 critical height the contents of that cell are redistributed among that cell\
 \[CloseCurlyQuote]s Moore neighbors (eight adjacent neighbors) according to a \
@@ -1107,9 +1108,9 @@ ComponentMeasurements[ ].\
   3.708213819161746*^9, 3.708221235055958*^9, {3.708221351902937*^9, 
    3.708221355838459*^9}, 3.708221414768798*^9, 3.708250344332869*^9, {
    3.7082506397054577`*^9, 3.708250672468522*^9}, {3.708250746060584*^9, 
-   3.7082507784520206`*^9}, 
-   3.708252803927186*^9},ExpressionUUID->"2b333db4-7bf7-40bf-81ef-\
-7bde327d6cf3"]
+   3.7082507784520206`*^9}, 3.708252803927186*^9, 
+   3.708256833950861*^9},ExpressionUUID->"ccb4d299-1a08-407f-8242-\
+7cab9bf2e294"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1190,8 +1191,8 @@ are still misplaced.\
    3.708250878076564*^9}, 3.7082509342062893`*^9, {3.7082521236734133`*^9, 
    3.708252123789163*^9}, 3.708252805399645*^9, {3.708252949480497*^9, 
    3.708252950264929*^9}, {3.708253002356395*^9, 
-   3.7082530025175247`*^9}},ExpressionUUID->"0f24090b-5d86-4aa7-8f16-\
-e1448b08a881"]
+   3.7082530025175247`*^9}},ExpressionUUID->"f08c5b7a-a567-4cc6-af3a-\
+522968c0f0af"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1205,13 +1206,13 @@ Cell["\<\
 I found it is easy to predict the direction of sandpile growth in simple \
 variations of the sandpile model. I also found it is possible to learn \
 something about growth rate and resulting pile length, but the predictions \
-are less precise. Improper ordering of neighbors is attributable to errors \
-created by approximating the sandpiles as ellipsoids in the \
+are less precise. The improper ordering of neighbors is attributable to \
+errors created by approximating the sandpiles as ellipsoids in the \
 ComponentMeasurements[ ] function. These errors could possibly be avoided by \
-measuring length from the underlying table numerically. Still there remains \
-the issue of precisely defining length. Possible definitions include the \
-minimum and maximum extent of the column aligned with the growth-vector, or \
-any vector parallel to the growth vector.
+measuring the length from the underlying table numerically. Still there \
+remains the issue of precisely defining length. Possible definitions include \
+the minimum and maximum extent of the column aligned with the growth-vector, \
+or any vector parallel to the growth vector.
 
 These simple programs were chosen for my investigation because they are \
 entirely deterministic. A more difficult study would involve randomly \
@@ -1221,20 +1222,20 @@ did not investigate systematically. We know from autoplectic processes that \
 simply because the models used were entirely deterministic with perfectly \
 controllable initial conditions, does not mean they would be amenable to \
 prediction. Another reason these programs were chosen is because only a \
-single rule is ever applied. Consequently I did not have to take into account \
-complicated interactions between rules. Ultimately, studying the behavior of \
-programs for simple models like the sandpile, help us develop a better \
-understanding of the dynamics of micro-macro links.\
+single rule is ever applied. Consequently, I did not have to take into \
+account complicated interactions between rules. Ultimately, studying the \
+behavior of programs for simple models like the sandpile, help us develop a \
+better understanding of the dynamics of micro-macro links.\
 \>", "Text",
  CellChangeTimes->{{3.708213890699669*^9, 3.708213891585788*^9}, {
    3.70822128097303*^9, 3.70822130037777*^9}, {3.7082213446927958`*^9, 
    3.708221345849595*^9}, 3.708221403517125*^9, {3.708250369572792*^9, 
    3.708250372160124*^9}, 3.708250981954739*^9, {3.708251040789701*^9, 
-   3.708251240497879*^9}, 
-   3.708252809641012*^9},ExpressionUUID->"54bef772-7453-411f-a2e6-\
-98897633c199"]
+   3.708251240497879*^9}, 3.708252809641012*^9, 
+   3.708256901714381*^9},ExpressionUUID->"119fc5e4-3a79-4a2d-b8aa-\
+191185509e8e"]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -6684,17 +6685,17 @@ CellTagsIndex->{
    b2bc-4558cd87d1b0",
    CellTags->"Author"]},
  "FutureDirections"->{
-  Cell[64200, 1269, 276, 4, 
+  Cell[64328, 1270, 276, 4, 
   57, "TemplateSubsection", "ExpressionUUID" -> "42b0e259-
    b05a-4746-91f8-49ac03892249",
    CellTags->"FutureDirections"]},
  "Keywords"->{
-  Cell[65707, 1305, 182, 2, 
+  Cell[65835, 1306, 182, 2, 
   57, "TemplateSubsection", "ExpressionUUID" -> "
    49f9e91f-8f29-400b-8dfa-4d6143f7df62",
    CellTags->"Keywords"]},
  "LastModifiedDate"->{
-  Cell[67577, 1358, 232, 7, 
+  Cell[67705, 1359, 232, 7, 
   28, "LastModified", "ExpressionUUID" -> "0916bbd1-8b97-4444-
    b333-32365e2b47ad",
    CellTags->"LastModifiedDate"]},
@@ -6707,12 +6708,12 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Affiliation", 380031, 6675},
- {"Author", 380189, 6680},
- {"FutureDirections", 380352, 6685},
- {"Keywords", 380523, 6690},
- {"LastModifiedDate", 380694, 6695},
- {"Mentor", 380857, 6700}
+ {"Affiliation", 380159, 6676},
+ {"Author", 380317, 6681},
+ {"FutureDirections", 380480, 6686},
+ {"Keywords", 380651, 6691},
+ {"LastModifiedDate", 380822, 6696},
+ {"Mentor", 380985, 6701}
  }
 *)
 (*NotebookFileOutline
@@ -6744,102 +6745,102 @@ Cell[24387, 448, 308, 5, 68, "TemplateSection", "ExpressionUUID" -> \
 "e957a639-c200-4d66-a6a5-254d8a677871"],
 Cell[24698, 455, 1285, 20, 87, "TemplateText", "ExpressionUUID" -> \
 "90060dbf-18f8-485c-8149-7ea1a1729a0d"],
-Cell[25986, 477, 1245, 19, 106, "TemplateText", "ExpressionUUID" -> \
+Cell[25986, 477, 1297, 20, 106, "TemplateText", "ExpressionUUID" -> \
 "312823cf-6f49-41f5-94ee-179375b4aabf"],
-Cell[27234, 498, 1601, 30, 182, "TemplateText", "ExpressionUUID" -> \
+Cell[27286, 499, 1601, 30, 182, "TemplateText", "ExpressionUUID" -> \
 "43dffd15-6481-4dd2-959d-71c1c288de61"]
 }, Open  ]]
 }, Open  ]],
-Cell[28862, 532, 6920, 145, 63, "TemplateSectionDivider", "ExpressionUUID" -> \
+Cell[28914, 533, 6920, 145, 63, "TemplateSectionDivider", "ExpressionUUID" -> \
 "5b0753ff-f333-484b-9277-9671aae7a153"],
 Cell[CellGroupData[{
-Cell[35807, 681, 507, 16, 68, "TemplateSection", "ExpressionUUID" -> \
+Cell[35859, 682, 507, 16, 68, "TemplateSection", "ExpressionUUID" -> \
 "a53190ab-ee87-43be-909d-2c0ec9941927"],
-Cell[36317, 699, 367, 5, 37, "Text", "ExpressionUUID" -> \
+Cell[36369, 700, 367, 5, 37, "Text", "ExpressionUUID" -> \
 "375e3ff2-6a8a-4778-9680-087aa6791d09"],
-Cell[36687, 706, 7948, 163, 397, "Text", "ExpressionUUID" -> \
+Cell[36739, 707, 7948, 163, 397, "Text", "ExpressionUUID" -> \
 "4552fdcb-768d-4c07-b9d3-f4c3c28430b3"]
 }, Open  ]],
-Cell[44650, 872, 7856, 162, 63, "TemplateSectionDivider", "ExpressionUUID" -> \
+Cell[44702, 873, 7856, 162, 63, "TemplateSectionDivider", "ExpressionUUID" -> \
 "8f73e1cb-dfab-4942-87a7-8c9e56795021"],
 Cell[CellGroupData[{
-Cell[52531, 1038, 186, 3, 68, "TemplateSection", "ExpressionUUID" -> \
+Cell[52583, 1039, 186, 3, 68, "TemplateSection", "ExpressionUUID" -> \
 "b1ba997e-a93f-42d4-94bb-08af5366ed95"],
 Cell[CellGroupData[{
-Cell[52742, 1045, 316, 5, 68, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[52794, 1046, 316, 5, 68, "TemplateSubsection", "ExpressionUUID" -> \
 "e6397930-33f1-4ef5-8362-90ff011e87ce"],
 Cell[CellGroupData[{
-Cell[53083, 1054, 155, 3, 35, "Subsubsection", "ExpressionUUID" -> \
+Cell[53135, 1055, 155, 3, 35, "Subsubsection", "ExpressionUUID" -> \
 "ac02ac5c-6eb0-4430-b2ba-ef8e3974b075"],
-Cell[53241, 1059, 945, 16, 87, "Text", "ExpressionUUID" -> \
+Cell[53293, 1060, 968, 16, 87, "Text", "ExpressionUUID" -> \
 "83b19a70-da27-4d95-9087-b33ddf3b6c17"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[54223, 1080, 213, 4, 35, "Subsubsection", "ExpressionUUID" -> \
+Cell[54298, 1081, 213, 4, 35, "Subsubsection", "ExpressionUUID" -> \
 "180066a3-43f8-42b5-ab25-3f8a8957f5eb"],
-Cell[54439, 1086, 1628, 25, 182, "Text", "ExpressionUUID" -> \
+Cell[54514, 1087, 1650, 25, 182, "Text", "ExpressionUUID" -> \
 "ccb4d299-1a08-407f-8242-7cab9bf2e294"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[56104, 1116, 158, 3, 35, "Subsubsection", "ExpressionUUID" -> \
+Cell[56201, 1117, 158, 3, 35, "Subsubsection", "ExpressionUUID" -> \
 "d3527c34-7544-4bb5-9f78-bdeedc7f209c"],
-Cell[56265, 1121, 4581, 72, 676, "Text", "ExpressionUUID" -> \
+Cell[56362, 1122, 4581, 72, 676, "Text", "ExpressionUUID" -> \
 "f08c5b7a-a567-4cc6-af3a-522968c0f0af"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[60883, 1198, 164, 3, 35, "Subsubsection", "ExpressionUUID" -> \
+Cell[60980, 1199, 164, 3, 35, "Subsubsection", "ExpressionUUID" -> \
 "c9d9d2db-4da7-4754-b004-b27f27de618b"],
-Cell[61050, 1203, 2024, 31, 239, "Text", "ExpressionUUID" -> \
+Cell[61147, 1204, 2055, 31, 239, "Text", "ExpressionUUID" -> \
 "119fc5e4-3a79-4a2d-b8aa-191185509e8e"]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[63123, 1240, 183, 3, 57, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[63251, 1241, 183, 3, 68, "TemplateSubsection", "ExpressionUUID" -> \
 "f349138e-d673-49b3-af54-e5229f329b8b"],
-Cell[63309, 1245, 370, 8, 30, "Text", "ExpressionUUID" -> \
+Cell[63437, 1246, 370, 8, 30, "Text", "ExpressionUUID" -> \
 "c4697cda-b9d6-4fe2-826d-69ee79e63f99"]
 }, Closed]],
-Cell[63694, 1256, 481, 9, 57, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[63822, 1257, 481, 9, 57, "TemplateSubsection", "ExpressionUUID" -> \
 "65e4dabf-0d86-4ee3-9000-b41d70fa318a"],
 Cell[CellGroupData[{
-Cell[64200, 1269, 276, 4, 57, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[64328, 1270, 276, 4, 57, "TemplateSubsection", "ExpressionUUID" -> \
 "42b0e259-b05a-4746-91f8-49ac03892249",
  CellTags->"FutureDirections"],
 Cell[CellGroupData[{
-Cell[64501, 1277, 370, 6, 30, "Item", "ExpressionUUID" -> \
+Cell[64629, 1278, 370, 6, 30, "Item", "ExpressionUUID" -> \
 "2c6a36d5-beef-4a2c-b92e-74d8148145e1"],
-Cell[64874, 1285, 394, 6, 30, "Item", "ExpressionUUID" -> \
+Cell[65002, 1286, 394, 6, 30, "Item", "ExpressionUUID" -> \
 "f45a15a2-7cf1-4129-b7b5-817c8fba196d"],
-Cell[65271, 1293, 387, 6, 30, "Item", "ExpressionUUID" -> \
+Cell[65399, 1294, 387, 6, 30, "Item", "ExpressionUUID" -> \
 "c61e2d26-5674-4524-8b92-9797e13e0f52"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[65707, 1305, 182, 2, 57, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[65835, 1306, 182, 2, 57, "TemplateSubsection", "ExpressionUUID" -> \
 "49f9e91f-8f29-400b-8dfa-4d6143f7df62",
  CellTags->"Keywords"],
 Cell[CellGroupData[{
-Cell[65914, 1311, 296, 5, 30, "Item", "ExpressionUUID" -> \
+Cell[66042, 1312, 296, 5, 30, "Item", "ExpressionUUID" -> \
 "6e077aed-55e5-4309-93bb-f10dbb8d962b"],
-Cell[66213, 1318, 305, 5, 30, "Item", "ExpressionUUID" -> \
+Cell[66341, 1319, 305, 5, 30, "Item", "ExpressionUUID" -> \
 "314565c3-b771-45c1-a9ea-c5e4780976c7"],
-Cell[66521, 1325, 207, 4, 30, "Item", "ExpressionUUID" -> \
+Cell[66649, 1326, 207, 4, 30, "Item", "ExpressionUUID" -> \
 "b7f6e420-5c15-4efa-89f7-1db2983fb85c"],
-Cell[66731, 1331, 203, 4, 30, "Item", "ExpressionUUID" -> \
+Cell[66859, 1332, 203, 4, 30, "Item", "ExpressionUUID" -> \
 "e0415e56-abdc-4334-ac16-42b63d85e67a"],
-Cell[66937, 1337, 213, 4, 30, "Item", "ExpressionUUID" -> \
+Cell[67065, 1338, 213, 4, 30, "Item", "ExpressionUUID" -> \
 "20ff1ca3-f2fd-4a9a-a364-da6802def5ea"],
-Cell[67153, 1343, 210, 4, 30, "Item", "ExpressionUUID" -> \
+Cell[67281, 1344, 210, 4, 30, "Item", "ExpressionUUID" -> \
 "265db61d-cd9a-4c55-b69a-b92ada4add71"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[67412, 1353, 162, 3, 57, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[67540, 1354, 162, 3, 57, "TemplateSubsection", "ExpressionUUID" -> \
 "1018da6c-caa3-4675-8c1e-06774c43d287"],
-Cell[67577, 1358, 232, 7, 28, "LastModified", "ExpressionUUID" -> \
+Cell[67705, 1359, 232, 7, 28, "LastModified", "ExpressionUUID" -> \
 "0916bbd1-8b97-4444-b333-32365e2b47ad",
  CellTags->"LastModifiedDate"],
-Cell[67812, 1367, 917, 24, 43, "Input", "ExpressionUUID" -> \
+Cell[67940, 1368, 917, 24, 43, "Input", "ExpressionUUID" -> \
 "d7467a5d-9305-44c5-a856-3068f3274e97"]
 }, Closed]]
 }, Open  ]]
