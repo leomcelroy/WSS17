@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    386649,       6842]
-NotebookOptionsPosition[     68913,       1396]
-NotebookOutlinePosition[    381421,       6719]
-CellTagsIndexPosition[    381188,       6709]
+NotebookDataLength[    386719,       6843]
+NotebookOptionsPosition[     68971,       1397]
+NotebookOutlinePosition[    381491,       6720]
+CellTagsIndexPosition[    381258,       6710]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -481,8 +481,8 @@ Cell[TextData[{
  " \nI investigated all 255 Moore neighborhood rules, with critical heights \
 from one to eight and each grain of sand being uniquely distributed. All \
 rules were sand conserving. I looked at models with randomly added sand, and \
-with sand added only to center cell. The focus of my investigation was piles \
-on a 301 x 301 table with 3000 grains of sand. \n"
+with sand added only to the center cell. The focus of my investigation was \
+sandpiles on a 301 x 301 table with 3000 grains of sand. \n"
 }], "TemplateText",
  CellChangeTimes->{{3.707836787772583*^9, 3.707836799763899*^9}, 
    3.708098577554308*^9, {3.708098758217001*^9, 3.7080987585846367`*^9}, {
@@ -493,8 +493,9 @@ on a 301 x 301 table with 3000 grains of sand. \n"
    3.708211909909193*^9}, {3.708213239563405*^9, 3.708213342543881*^9}, {
    3.708214264466948*^9, 3.708214265405147*^9}, 3.708214901396349*^9, {
    3.708250263381274*^9, 3.70825030795012*^9}, {3.7082523614331923`*^9, 
-   3.70825246545168*^9}, {3.7082564634840193`*^9, 
-   3.7082564986365023`*^9}},ExpressionUUID->"312823cf-6f49-41f5-94ee-\
+   3.70825246545168*^9}, {3.7082564634840193`*^9, 3.7082564986365023`*^9}, {
+   3.708265166589205*^9, 
+   3.708265175047326*^9}},ExpressionUUID->"312823cf-6f49-41f5-94ee-\
 179375b4aabf"],
 
 Cell[TextData[{
@@ -6479,16 +6480,16 @@ adobe.com/xap/1.0/> <tiff:ResolutionUnit>2</tiff:ResolutionUnit> \
                     InterpretationBox[
                     ButtonBox[
                     TooltipBox[
-                    GraphicsBox[{{{{{{{{{
+                    GraphicsBox[{{{{{{{{{{
                     GrayLevel[0], 
-                    RectangleBox[{0, 0}]}}}}}}}}, {{{{{{{{
+                    RectangleBox[{0, 0}]}}}}}}}}}, {{{{{{{{{
                     GrayLevel[0], 
-                    RectangleBox[{1, -1}]}}}}}}}}, {{{{{{{{
+                    RectangleBox[{1, -1}]}}}}}}}}}, {{{{{{{{{
                     RGBColor[
                     0.7143816281376364, 0.21776150148775464`, 
                     0.03341725795376516], 
-                    RectangleBox[{0, -1}, {2, 1}]}}}}}}}}}, AspectRatio -> 1, 
-                    Frame -> True, FrameStyle -> 
+                    RectangleBox[{0, -1}, {2, 1}]}}}}}}}}}}, AspectRatio -> 1,
+                     Frame -> True, FrameStyle -> 
                     RGBColor[
                     0.4762544187584243, 0.14517433432516977`, 
                     0.022278171969176776`], FrameTicks -> None, ImageSize -> 
@@ -6543,16 +6544,16 @@ adobe.com/xap/1.0/> <tiff:ResolutionUnit>2</tiff:ResolutionUnit> \
                    InterpretationBox[
                     ButtonBox[
                     TooltipBox[
-                    GraphicsBox[{{{{{{{{{
+                    GraphicsBox[{{{{{{{{{{
                     GrayLevel[0], 
-                    RectangleBox[{0, 0}]}}}}}}}}, {{{{{{{{
+                    RectangleBox[{0, 0}]}}}}}}}}}, {{{{{{{{{
                     GrayLevel[0], 
-                    RectangleBox[{1, -1}]}}}}}}}}, {{{{{{{{
+                    RectangleBox[{1, -1}]}}}}}}}}}, {{{{{{{{{
                     RGBColor[
                     0.7143816281376364, 0.21776150148775464`, 
                     0.03341725795376516], 
-                    RectangleBox[{0, -1}, {2, 1}]}}}}}}}}}, AspectRatio -> 1, 
-                    Frame -> True, FrameStyle -> 
+                    RectangleBox[{0, -1}, {2, 1}]}}}}}}}}}}, AspectRatio -> 1,
+                     Frame -> True, FrameStyle -> 
                     RGBColor[
                     0.4762544187584243, 0.14517433432516977`, 
                     0.022278171969176776`], FrameTicks -> None, ImageSize -> 
@@ -6690,17 +6691,17 @@ CellTagsIndex->{
    ea56f0aff682",
    CellTags->"Affiliation"]},
  "FutureDirections"->{
-  Cell[64356, 1270, 276, 4, 
+  Cell[64414, 1271, 276, 4, 
   57, "TemplateSubsection", "ExpressionUUID" -> "af2a5657-609a-40e6-
    bc1b-35a23c863ab2",
    CellTags->"FutureDirections"]},
  "Keywords"->{
-  Cell[65863, 1306, 182, 2, 
+  Cell[65921, 1307, 182, 2, 
   57, "TemplateSubsection", "ExpressionUUID" -> "0a9d4fd1-d336-4f32-
    b85d-12e6f9eed8ed",
    CellTags->"Keywords"]},
  "LastModifiedDate"->{
-  Cell[67733, 1359, 232, 7, 
+  Cell[67791, 1360, 232, 7, 
   28, "LastModified", "ExpressionUUID" -> "0916bbd1-8b97-4444-
    b333-32365e2b47ad",
    CellTags->"LastModifiedDate"]}
@@ -6708,12 +6709,12 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Author", 380194, 6676},
- {"Mentor", 380347, 6681},
- {"Affiliation", 380505, 6686},
- {"FutureDirections", 380673, 6691},
- {"Keywords", 380844, 6696},
- {"LastModifiedDate", 381015, 6701}
+ {"Author", 380264, 6677},
+ {"Mentor", 380417, 6682},
+ {"Affiliation", 380575, 6687},
+ {"FutureDirections", 380743, 6692},
+ {"Keywords", 380914, 6697},
+ {"LastModifiedDate", 381085, 6702}
  }
 *)
 (*NotebookFileOutline
@@ -6745,102 +6746,102 @@ Cell[24387, 448, 308, 5, 68, "TemplateSection", "ExpressionUUID" -> \
 "7f28a721-268a-464e-9bc5-31f61fa28c7d"],
 Cell[24698, 455, 1285, 20, 87, "TemplateText", "ExpressionUUID" -> \
 "fa419d26-d4bc-4ba9-997c-060f6074c75f"],
-Cell[25986, 477, 1297, 20, 106, "TemplateText", "ExpressionUUID" -> \
+Cell[25986, 477, 1355, 21, 106, "TemplateText", "ExpressionUUID" -> \
 "312823cf-6f49-41f5-94ee-179375b4aabf"],
-Cell[27286, 499, 1601, 30, 182, "TemplateText", "ExpressionUUID" -> \
+Cell[27344, 500, 1601, 30, 182, "TemplateText", "ExpressionUUID" -> \
 "43dffd15-6481-4dd2-959d-71c1c288de61"]
 }, Open  ]]
 }, Open  ]],
-Cell[28914, 533, 6920, 145, 63, "TemplateSectionDivider", "ExpressionUUID" -> \
+Cell[28972, 534, 6920, 145, 63, "TemplateSectionDivider", "ExpressionUUID" -> \
 "5b0753ff-f333-484b-9277-9671aae7a153"],
 Cell[CellGroupData[{
-Cell[35859, 682, 507, 16, 68, "TemplateSection", "ExpressionUUID" -> \
+Cell[35917, 683, 507, 16, 68, "TemplateSection", "ExpressionUUID" -> \
 "2d847a34-66d2-4516-b974-ff32b660a5bf"],
-Cell[36369, 700, 367, 5, 37, "Text", "ExpressionUUID" -> \
+Cell[36427, 701, 367, 5, 37, "Text", "ExpressionUUID" -> \
 "3a6f6b8a-cd77-4428-bfec-e16527ef6a89"],
-Cell[36739, 707, 7948, 163, 397, "Text", "ExpressionUUID" -> \
+Cell[36797, 708, 7948, 163, 397, "Text", "ExpressionUUID" -> \
 "e0778b0c-b472-4bc4-a11d-278703f56e54"]
 }, Open  ]],
-Cell[44702, 873, 7856, 162, 63, "TemplateSectionDivider", "ExpressionUUID" -> \
+Cell[44760, 874, 7856, 162, 63, "TemplateSectionDivider", "ExpressionUUID" -> \
 "8f73e1cb-dfab-4942-87a7-8c9e56795021"],
 Cell[CellGroupData[{
-Cell[52583, 1039, 186, 3, 68, "TemplateSection", "ExpressionUUID" -> \
+Cell[52641, 1040, 186, 3, 68, "TemplateSection", "ExpressionUUID" -> \
 "ba97f0a3-c165-451d-bf4c-74c0b4a4f36e"],
 Cell[CellGroupData[{
-Cell[52794, 1046, 316, 5, 68, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[52852, 1047, 316, 5, 68, "TemplateSubsection", "ExpressionUUID" -> \
 "e6397930-33f1-4ef5-8362-90ff011e87ce"],
 Cell[CellGroupData[{
-Cell[53135, 1055, 155, 3, 35, "Subsubsection", "ExpressionUUID" -> \
+Cell[53193, 1056, 155, 3, 35, "Subsubsection", "ExpressionUUID" -> \
 "23f7e800-8431-422e-9b7e-5736ee3c77ec"],
-Cell[53293, 1060, 968, 16, 87, "Text", "ExpressionUUID" -> \
+Cell[53351, 1061, 968, 16, 87, "Text", "ExpressionUUID" -> \
 "83b19a70-da27-4d95-9087-b33ddf3b6c17"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[54298, 1081, 213, 4, 35, "Subsubsection", "ExpressionUUID" -> \
+Cell[54356, 1082, 213, 4, 35, "Subsubsection", "ExpressionUUID" -> \
 "8e0fd197-0044-4563-84b5-58a3e2113a35"],
-Cell[54514, 1087, 1650, 25, 182, "Text", "ExpressionUUID" -> \
+Cell[54572, 1088, 1650, 25, 182, "Text", "ExpressionUUID" -> \
 "ccb4d299-1a08-407f-8242-7cab9bf2e294"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[56201, 1117, 158, 3, 35, "Subsubsection", "ExpressionUUID" -> \
+Cell[56259, 1118, 158, 3, 35, "Subsubsection", "ExpressionUUID" -> \
 "594c1301-a5df-499d-8b3e-da92cd37eb61"],
-Cell[56362, 1122, 4609, 72, 676, "Text", "ExpressionUUID" -> \
+Cell[56420, 1123, 4609, 72, 676, "Text", "ExpressionUUID" -> \
 "f08c5b7a-a567-4cc6-af3a-522968c0f0af"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[61008, 1199, 164, 3, 35, "Subsubsection", "ExpressionUUID" -> \
+Cell[61066, 1200, 164, 3, 35, "Subsubsection", "ExpressionUUID" -> \
 "e3a7da23-649a-453e-bbe2-ada06559e72c"],
-Cell[61175, 1204, 2055, 31, 239, "Text", "ExpressionUUID" -> \
+Cell[61233, 1205, 2055, 31, 239, "Text", "ExpressionUUID" -> \
 "119fc5e4-3a79-4a2d-b8aa-191185509e8e"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[63279, 1241, 183, 3, 68, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[63337, 1242, 183, 3, 68, "TemplateSubsection", "ExpressionUUID" -> \
 "44b9d74c-194c-471a-a08d-6c72b47466f8"],
-Cell[63465, 1246, 370, 8, 30, "Text", "ExpressionUUID" -> \
+Cell[63523, 1247, 370, 8, 30, "Text", "ExpressionUUID" -> \
 "d7113091-903d-45d4-8d2b-48fb92c06bcf"]
 }, Closed]],
-Cell[63850, 1257, 481, 9, 57, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[63908, 1258, 481, 9, 57, "TemplateSubsection", "ExpressionUUID" -> \
 "f068195e-d248-4f97-88e2-5210d7c71653"],
 Cell[CellGroupData[{
-Cell[64356, 1270, 276, 4, 57, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[64414, 1271, 276, 4, 57, "TemplateSubsection", "ExpressionUUID" -> \
 "af2a5657-609a-40e6-bc1b-35a23c863ab2",
  CellTags->"FutureDirections"],
 Cell[CellGroupData[{
-Cell[64657, 1278, 370, 6, 30, "Item", "ExpressionUUID" -> \
+Cell[64715, 1279, 370, 6, 30, "Item", "ExpressionUUID" -> \
 "2c6a36d5-beef-4a2c-b92e-74d8148145e1"],
-Cell[65030, 1286, 394, 6, 30, "Item", "ExpressionUUID" -> \
+Cell[65088, 1287, 394, 6, 30, "Item", "ExpressionUUID" -> \
 "f45a15a2-7cf1-4129-b7b5-817c8fba196d"],
-Cell[65427, 1294, 387, 6, 30, "Item", "ExpressionUUID" -> \
+Cell[65485, 1295, 387, 6, 30, "Item", "ExpressionUUID" -> \
 "c61e2d26-5674-4524-8b92-9797e13e0f52"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[65863, 1306, 182, 2, 57, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[65921, 1307, 182, 2, 57, "TemplateSubsection", "ExpressionUUID" -> \
 "0a9d4fd1-d336-4f32-b85d-12e6f9eed8ed",
  CellTags->"Keywords"],
 Cell[CellGroupData[{
-Cell[66070, 1312, 296, 5, 30, "Item", "ExpressionUUID" -> \
+Cell[66128, 1313, 296, 5, 30, "Item", "ExpressionUUID" -> \
 "6e077aed-55e5-4309-93bb-f10dbb8d962b"],
-Cell[66369, 1319, 305, 5, 30, "Item", "ExpressionUUID" -> \
+Cell[66427, 1320, 305, 5, 30, "Item", "ExpressionUUID" -> \
 "314565c3-b771-45c1-a9ea-c5e4780976c7"],
-Cell[66677, 1326, 207, 4, 30, "Item", "ExpressionUUID" -> \
+Cell[66735, 1327, 207, 4, 30, "Item", "ExpressionUUID" -> \
 "b7f6e420-5c15-4efa-89f7-1db2983fb85c"],
-Cell[66887, 1332, 203, 4, 30, "Item", "ExpressionUUID" -> \
+Cell[66945, 1333, 203, 4, 30, "Item", "ExpressionUUID" -> \
 "e0415e56-abdc-4334-ac16-42b63d85e67a"],
-Cell[67093, 1338, 213, 4, 30, "Item", "ExpressionUUID" -> \
+Cell[67151, 1339, 213, 4, 30, "Item", "ExpressionUUID" -> \
 "20ff1ca3-f2fd-4a9a-a364-da6802def5ea"],
-Cell[67309, 1344, 210, 4, 30, "Item", "ExpressionUUID" -> \
+Cell[67367, 1345, 210, 4, 30, "Item", "ExpressionUUID" -> \
 "265db61d-cd9a-4c55-b69a-b92ada4add71"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[67568, 1354, 162, 3, 57, "TemplateSubsection", "ExpressionUUID" -> \
+Cell[67626, 1355, 162, 3, 57, "TemplateSubsection", "ExpressionUUID" -> \
 "e0168983-e289-43bf-b551-34ca84e0e608"],
-Cell[67733, 1359, 232, 7, 28, "LastModified", "ExpressionUUID" -> \
+Cell[67791, 1360, 232, 7, 28, "LastModified", "ExpressionUUID" -> \
 "0916bbd1-8b97-4444-b333-32365e2b47ad",
  CellTags->"LastModifiedDate"],
-Cell[67968, 1368, 917, 24, 43, "Input", "ExpressionUUID" -> \
+Cell[68026, 1369, 917, 24, 43, "Input", "ExpressionUUID" -> \
 "d7467a5d-9305-44c5-a856-3068f3274e97"]
 }, Closed]]
 }, Open  ]]
